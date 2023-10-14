@@ -1,0 +1,323 @@
+@font-face {
+    font-family: 'GTWalsheim';
+    src: url(fonts/GT-Walsheim-Light.woff2) format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GTWalsheimBold';
+    src: url(fonts/GTWalsheim-Bold.woff2) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: GTWalsheimMed;
+    src: url(/fonts/GTWalsheimMedium.woff2) format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+:root {
+    --themePurple: rgb(120, 51, 243);
+    --themeBlue: rgb(0, 27, 66);
+}
+
+header {
+    font-weight: bold;
+}
+
+h1,
+h2,
+h3 {
+    font-family: GTWalsheimBold;
+}
+
+
+
+body,
+html,
+.btn,
+.nav-link {
+    font-family: GTWalsheim, Arial;
+    font-size: 17px;
+    letter-spacing: 0.05em;
+    line-height: 2em;
+    color: var(--themeBlue);
+}
+
+footer,
+footer .nav-link {
+    font-size: 15px;
+    letter-spacing: 0;
+}
+
+.purpleText,
+.nav-link:hover {
+    color: var(--themePurple);
+}
+
+.navbar-toggler-icon {
+    color: var(--themePurple);
+}
+
+.btn-purple {
+    color: white;
+    border-radius: 30px;
+    border: 2px solid var(--themePurple);
+    background-color: var(--themePurple);
+}
+
+.btn-purple:hover {
+    color: var(--themeBlue);
+    background-color: white;
+    border: 2px solid var(--themeBlue);
+}
+
+.headerPhone {
+    border-bottom: 3px solid var(--themePurple);
+}
+
+.footerPhone {
+    border-bottom: 2px solid var(--themePurple);
+    text-decoration: none;
+    color: var(--themeBlue);
+}
+
+.icon {
+    background-color: white;
+    border-radius: 50%;
+    margin: 7px;
+}
+
+.icon-svg {
+    height: 30px;
+    margin: 10px;
+}
+
+.phone-icon {
+    position: fixed;
+    bottom: 14px;
+    right: 14px;
+    z-index: 1000;
+    border: 3px solid var(--themePurple);
+    border-radius: 50%;
+    background-color: white;
+}
+
+.greyback {
+    background-color: #f3f3f3;
+}
+
+.hero-video {
+    position: relative;
+    height: 100vh;
+    /* Adjust this based on the height you want for the video container */
+}
+
+.hero-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(-1);
+    /* Flip video */
+    z-index: 0;
+    /* Send video to the background */
+}
+
+.hero-content {
+    margin-top: 106px;
+    padding-left: 10px;
+    position: relative;
+    z-index: 1;
+    font-family: GTWalsheimBold;
+    font-weight: bold;
+}
+
+.award-item img {
+    max-width: 100%;
+    max-height: 100px;
+    height: auto;
+}
+
+.bold {
+    font-family: GTWalsheimBold;
+}
+
+.brand-list .brands {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-list .brands img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    margin: 0 3px;
+}
+
+.services-card {
+    padding: 25px;
+    background-color: var(--themeBlue);
+    color: white;
+    height: 400px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: GTWalsheim;
+}
+
+.btn-learn,
+.btn-learn:hover {
+    background: var(--themeBlue);
+    color: white;
+    border: 2px solid white;
+    border-radius: 40px;
+}
+
+.double-lines {
+    line-height: 2;
+}
+
+row .pathway-to-purchase {
+    font-size: 20px;
+}
+
+.footer-pic {
+    background-image: url(images/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 275px;
+}
+
+.testimonial {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(images/quote-icon.png);
+    background-size: 175px 125px;
+    background-position: 50px 100px;
+    background-repeat: no-repeat;
+}
+
+.background-2 {
+    background-image: url(images/bg-2.png)
+}
+
+.form-group input {
+    width: 100%;
+    border-color: var(--themePurple);
+    color: var(--themePurple);
+}
+
+::placeholder {
+    color: var(--themePurple);
+}
+
+.bg-blue {
+    background-color: var(--themeBlue);
+}
+
+.epic-background-shapes {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    z-index: 0;
+}
+
+.case-study-card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.rh-badge {
+    font-size: 12px;
+    color: white;
+    background-color: var(--themePurple);
+    border-radius: 20px 0 0 20px;
+    margin: 20px 0;
+    padding-left: 10px;
+}
+
+.bottom-aligned {
+    position: absolute;
+    bottom: 0;
+}
+
+.btn-white {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin: 30px;
+    color: var(--themeBlue);
+    background-color: white;
+    border-color: white;
+    border-radius: 40px;
+}
+
+
+
+.about-us-section {
+    background-image: url(images/tra1-2.png);
+    background-repeat: no-repeat;
+    background-position: bottom -2px center;
+}
+
+@media (max-width: 767.98px) {
+    .about-us-section {
+        background-image: none;
+    }
+}
+
+.circle-container {
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.circle-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150%;
+    height: auto;
+}
+
+.purple-bullets {
+    list-style: none;
+}
+
+.purple-bullets li::before {
+    content: "\2022";
+    color: var(--themePurple);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.founders-circle {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    object-fit: cover;
+}
+
+.quote-icon {
+    position: absolute;
+    max-height: 130px;
+    width: auto;
+    left: -10px;
+    top: 0;
+    z-index: 0;
+}

@@ -1,0 +1,116 @@
+:root {
+    --primary-color: white;
+    --secondary-color: rgb(248, 102, 1);
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.containerdrop {
+    width: 450px;
+    height: auto;
+}
+
+.btn-outline-primary {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-outline-primary:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-primary {
+    color: var(--secondary-color);
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+
+.activeLink {
+    color: var(--secondary-color);
+}
+
+.navHeading {
+    color: var(--secondary-color);
+}
+
+.navImage {
+    height: 100vh;
+    background-image: url(images/aurora.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.prmcol {
+    color: var(--primary-color);
+}
+
+.card1 {
+    background-image: url(images/sydney.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card2 {
+    background-image: url(images/melbourne.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card3 {
+    background-image: url(images/tasmania.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.textBackground {
+    background-color: rgba(0, 0, 0, 0.434);
+    border-radius: 5px;
+}
+
+a {
+    color: var(--secondary-color);
+}
+
+.homesHero {
+    background-image: url(images/overland.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.vacant {
+    color: rgb(88, 190, 88);
+}
+
+.occupied {
+    color: rgb(255, 0, 0);
+}
+
+.contactForm {
+    background-color: var(--secondary-color);
+}
+
+.productsHero {
+    background-image: url(images/contrail.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product1Background {
+    background-color: rgb(193, 193, 191);
+}
