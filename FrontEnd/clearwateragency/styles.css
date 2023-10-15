@@ -6,23 +6,27 @@
 }
 
 @font-face {
+    font-family: 'GTWalsheimMed';
+    src: url(/fonts/GTWalsheimMedium.woff2) format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'GTWalsheimBold';
     src: url(fonts/GTWalsheim-Bold.woff2) format('woff2');
     font-weight: bold;
     font-style: normal;
 }
 
-@font-face {
-    font-family: GTWalsheimMed;
-    src: url(/fonts/GTWalsheimMedium.woff2) format('woff2');
-    font-weight: 300;
-    font-style: normal;
-}
+
 
 :root {
     --themePurple: rgb(120, 51, 243);
     --themeBlue: rgb(0, 27, 66);
 }
+
+vscode-file: //vscode-app/c:/Users/jayev/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html
 
 header {
     font-weight: bold;
@@ -34,15 +38,13 @@ h3 {
     font-family: GTWalsheimBold;
 }
 
-
-
 body,
 html,
 .btn,
 .nav-link {
     font-family: GTWalsheim, Arial;
     font-size: 17px;
-    letter-spacing: 0.05em;
+    /* letter-spacing: 0.05em; */
     line-height: 2em;
     color: var(--themeBlue);
 }
@@ -204,7 +206,9 @@ row .pathway-to-purchase {
 }
 
 .background-2 {
-    background-image: url(images/bg-2.png)
+    background-image: url(images/bg-2.png);
+    z-index: -1;
+    position: relative;
 }
 
 .form-group input {
@@ -217,16 +221,26 @@ row .pathway-to-purchase {
     color: var(--themePurple);
 }
 
-.bg-blue {
-    background-color: var(--themeBlue);
-}
-
 .epic-background-shapes {
     position: absolute;
-    top: 200px;
+    top: 150px;
     right: 0;
+    max-width: 550px;
+    opacity: 0.5;
     z-index: 0;
 }
+
+.bg-blue {
+    background-color: var(--themeBlue);
+    z-index: -1;
+    position: relative;
+}
+
+.bg-purple {
+    background-color: var(--themePurple);
+}
+
+
 
 .case-study-card {
     position: relative;
@@ -234,7 +248,11 @@ row .pathway-to-purchase {
     background-position: center;
 }
 
+.down-arrow {
+    max-height: 120px;
+    width: auto;
 
+}
 
 .rh-badge {
     font-size: 12px;
@@ -320,4 +338,24 @@ row .pathway-to-purchase {
     left: -10px;
     top: 0;
     z-index: 0;
+}
+
+.core-card {
+    padding: 50px 100px 0 12.75px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+.core-icon {
+    width: 150px;
+    height: 150px;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.purple-underline {
+    color: var(--themeBlue);
+    text-decoration: underline var(--themePurple);
 }
