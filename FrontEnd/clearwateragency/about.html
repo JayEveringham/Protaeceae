@@ -13,15 +13,7 @@
 </head>
 
 <body>
-    <!-- Breakpoint indicators -->
-    <!-- <div style="position: fixed; top: 0; right: 0; z-index: 9999;">
-            <div class="d-block d-sm-none prmcol">XS</div>
-            <div class="d-none d-sm-block d-md-none prmcol">SM</div>
-            <div class="d-none d-md-block d-lg-none prmcol">MD</div>
-            <div class="d-none d-lg-block d-xl-none prmcol">LG</div>
-            <div class="d-none d-xl-block d-xxl-none prmcol">XL</div>
-            <div class="d-none d-xxl-block prmcol">XXL</div>
-        </div> -->
+
 
     <header class="d-flex fixed-top flex-wrap p-3 px-md-4 px-lg-5 py-lg-3 m justify-content-between bg-white">
         <div class="col-md-2 m-0">
@@ -78,19 +70,20 @@
 
     <!-- We exist to grow -->
     <section>
-        <div class="container" style="padding: 80px 0 0px 0; margin-bottom: 100px; position: relative; z-index:0;">
-            <div class="d-none d-md-block epic-background-shapes">
-                <img src="images/background-shapes.jpg" width="720" height="1000" alt="shapes! epic.">
+        <div class="container" style="padding-top: 80px; margin-bottom: 40px; position: relative; z-index:0;">
+            <div class="d-none d-md-block about-shapes">
+                <img src="images/about-feature-v2.png" width="550" alt="shapes!">
             </div>
             <div class="col-md-8">
-                <h1 class="pt-5 display-3">We exist to grow challenger brands into market leaders</h1>
+                <h1 class="pt-5 display-3">We exist to <span class="ridiculous-underline">grow</span> challenger brands
+                    into market leaders</h1>
             </div>
         </div>
 
     </section>
 
     <!-- About Us-->
-    <section class="mt-5 bg-blue py-5 about-us-section" style="position:relative;">
+    <section class="mt-5 bg-blue py-5 about-us-section" style="position:relative;z-index:1;">
         <div class="container">
             <div class="row mb-3">
                 <div class="col">
@@ -204,36 +197,53 @@
                         <h1>Founders/Leaders</h1>
                     </div>
                 </header>
-                <div class="col-md-6 px-5">
-                    <img class="founders-circle" src="images/Glenn-Lockwood-scaled.jpg" alt="Glen Lockwood">
-                    <h2>Glen Lockwood</h2>
-                    <strong>Founder & Director</strong>
-                    <p>Founded the company in 2012. Glenn is a highly experienced digital marketer, business strategist
-                        and
-                        creative problem
-                        solver. Glenn has achieved his vision for Clearwater; a team that is the culmination of a love
-                        of
-                        art
-                        and tech culture,
-                        and a passion for data and business. These passions are brought together under one roof as a
-                        “unification” of strategic
-                        and creative forces.</p>
+                <div class="col-xl-6 px-5 ">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-6 mb-5">
+                            <img class="founders-circle" src="images/Glenn-Lockwood-scaled.jpg" alt="Glen Lockwood">
+                            <h2>Glen Lockwood</h2>
+                            <p class="fs-4">Founder & Director</p>
+                            <p class="fs-5">Founded the company in 2012. Glenn is a highly experienced digital marketer,
+                                business
+                                strategist
+                                and
+                                creative problem
+                                solver. Glenn has achieved his vision for Clearwater; a team that is the culmination of
+                                a
+                                love
+                                of
+                                art
+                                and tech culture,
+                                and a passion for data and business. These passions are brought together under one roof
+                                as a
+                                “unification” of strategic
+                                and creative forces.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 px-5">
-                    <img class="founders-circle" src="images/team2.jpg" alt="Dim Apolstolovski">
-                    <h2>Dim Apostolovski</h2>
-                    <strong>DIRECTOR OF STRATEGY & OPERATIONS</strong>
-                    <p>Dim is a natural born leader with 15 years experience in digital marketing. Having previously
-                        lead
-                        one of
-                        the most
-                        successful digital teams in Australia, Dim now leads our strategic thinking, innovation and is
-                        responsible for the
-                        delivery, execution and management of our digital services. As a technical strategist and
-                        corporate
-                        polymath, he plays a
-                        key role in bringing the “unification” vision to life.</p>
+                <div class="col-xl-6 px-5">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-6 my-5">
+                            <img class="founders-circle" src="images/team2.jpg" alt="Dim Apolstolovski">
+                            <h2>Dim Apostolovski</h2>
+                            <p class="fs-4">DIRECTOR OF STRATEGY & OPERATIONS</p>
+                            <p class="fs-5">Dim is a natural born leader with 15 years experience in digital marketing.
+                                Having
+                                previously
+                                lead
+                                one of
+                                the most
+                                successful digital teams in Australia, Dim now leads our strategic thinking, innovation
+                                and is
+                                responsible for the
+                                delivery, execution and management of our digital services. As a technical strategist
+                                and
+                                corporate
+                                polymath, he plays a
+                                key role in bringing the “unification” vision to life.</p>
 
+                        </div>
+                    </div>
                 </div>
             </div>
     </section>
@@ -715,19 +725,19 @@
             <div>
                 <p>Speak with one of our digital marketing specialists today.</p>
             </div>
-            <form action="#"></form>
-            <div class="row">
+            <form action="#">
+                <div class="row">
 
-                <div class="col-xl-4 col-lg-7 col-md-8 form-group">
-                    <label for="website" class="d-none"></label>
-                    <input type="text" id="website" name="website" placeholder="   Enter your website"
-                        style="height:3.5em;" class="mb-3" required>
+                    <div class="col-xl-4 col-lg-7 col-md-8 form-group">
+                        <label for="website" class="d-none"></label>
+                        <input type="text" id="website" name="website" placeholder="   Enter your website"
+                            style="height:3.5em;" class="mb-3" required>
+                    </div>
+                    <div
+                        class="col-xl-8 col-lg-5 col-md-4 form-group d-flex justify-content-md-end justify-content-xl-start">
+                        <button type="submit" class="btn btn-purple fs-5 mb-3">Get Started</button>
+                    </div>
                 </div>
-                <div
-                    class="col-xl-8 col-lg-5 col-md-4 form-group d-flex justify-content-md-end justify-content-xl-start">
-                    <button type="submit" class="btn btn-purple fs-5 mb-3">Get Started</button>
-                </div>
-            </div>
             </form>
         </div>
     </section>

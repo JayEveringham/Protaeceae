@@ -47,13 +47,13 @@
                                     <a class="nav-link" href="case-studies.html">Our Work</a>
                                 </li>
                                 <li class="nav-item px-1 ">
-                                    <a class="nav-link activeLink purpleText" href="about.html">About</a>
+                                    <a class="nav-link" href="about.html">About</a>
                                 </li>
                                 <li class="nav-item px-1 ">
                                     <a class="nav-link" href="awards.html">Awards</a>
                                 </li>
                                 <li class="nav-item px-1 ">
-                                    <a class="nav-link" href="contact.html">Contact</a>
+                                    <a class="nav-link activeLink purpleText" href="contact.html">Contact</a>
                                 </li>
                                 <li class="nav-item px-1 ">
                                     <div class="headerPhone pt-2">
@@ -85,7 +85,7 @@
                     <h1 class="pt-5 pb-3">Contact Us</h1>
                     <div class="purple-underline">
                         <a class="p-0 fs-3 fw-bold text-decoration-none nav-link" href="tel:1300796122" "><i class="
-                            fa-solid fa-phone" style="color: var(--themePurple);"></i>1300
+                            fa-solid fa-phone" style="color: var(--themeBlue);"></i>1300
                             796 122</a>
                     </div>
                 </div>
@@ -101,7 +101,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-light">
-                    <h1 class="mb-4">We'd love to hear about your digital marketing or web design project.</h1>
+                    <h1 class="mb-4 mt-4">We'd love to hear about your digital marketing or web design project.</h1>
                     <h4>Get a comprehensive digital marketing audit plus a 30 minute consultation with
                         an award-winning
                         strategist.</h4>
@@ -110,14 +110,12 @@
                     <form action="#">
                         <div class="row">
                             <div class="col-md-6 form-group">
-                                <label for="firstName">
-                                    <input type="text" id="firstName" name="firstName" placeholder="First Name"
-                                        required></label>
+                                <label for="firstName"></label>
+                                <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
                             </div>
                             <div class="col-md-6 form-group">
-                                <label for="lastName">
-                                    <input type="text" id="lastName" name="lastName" placeholder="Last Name"
-                                        required></label>
+                                <label for="lastName"></label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
                             </div>
                         </div>
                         <div class="row">
@@ -137,12 +135,12 @@
                         </div>
                         <div class="form-group">
                             <label for="help"></label>
-                            <input type="text" id="help" name="help" placeholder="How can we help?" required>
+                            <textarea type="text" id="help" name="help" placeholder="How can we help?" rows="4"
+                                required></textarea>
                         </div>
                         <div>
-                            <input class="my-4" type="checkbox" id="help" name="help" placeholder="How can we help?"
-                                required>
-                            <label for="robot">I'm not a robot</label>
+                            <input class="my-4" type="checkbox" id="help" name="help" required>
+                            <label for="robot">I'm not a robot :)</label>
                         </div>
                         <div>
                             <div>
@@ -227,7 +225,7 @@
                 </div>
 
 
-                <!-- Address overflow was causing first column to be mis-aligned.  Could have used row>col>col for literally every line but that seems like overkill? -->
+                <!-- Address overflow was causing first column to be mis-aligned.  Could have used row>col>col for every line but that seems like overkill? -->
                 <!-- <div class="col-md-6">
                     <h1>Contact Details</h1>
                     <h3 class="purpleText">Clearwater Agency</h3>

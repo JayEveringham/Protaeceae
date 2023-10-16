@@ -26,7 +26,6 @@
     --themeBlue: rgb(0, 27, 66);
 }
 
-vscode-file: //vscode-app/c:/Users/jayev/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html
 
 header {
     font-weight: bold;
@@ -115,6 +114,7 @@ footer .nav-link {
 .hero-video {
     position: relative;
     height: 100vh;
+    max-height: 850px;
     /* Adjust this based on the height you want for the video container */
 }
 
@@ -155,6 +155,7 @@ footer .nav-link {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .brand-list .brands img {
@@ -183,9 +184,6 @@ footer .nav-link {
     border-radius: 40px;
 }
 
-.double-lines {
-    line-height: 2;
-}
 
 row .pathway-to-purchase {
     font-size: 20px;
@@ -211,7 +209,8 @@ row .pathway-to-purchase {
     position: relative;
 }
 
-.form-group input {
+.form-group input,
+.form-group textarea {
     width: 100%;
     border-color: var(--themePurple);
     color: var(--themePurple);
@@ -223,10 +222,19 @@ row .pathway-to-purchase {
 
 .epic-background-shapes {
     position: absolute;
-    top: 150px;
+    bottom: -160px;
     right: 0;
     max-width: 550px;
-    opacity: 0.5;
+    /* opacity: 0.5; */
+    z-index: 0;
+}
+
+.about-shapes {
+    position: absolute;
+    top: 200px;
+    right: -100px;
+    height: auto;
+    /* opacity: 0.5; */
     z-index: 0;
 }
 
@@ -356,6 +364,15 @@ row .pathway-to-purchase {
 }
 
 .purple-underline {
+    display: inline-block;
     color: var(--themeBlue);
-    text-decoration: underline var(--themePurple);
+    border-bottom: 2px solid var(--themePurple);
+}
+
+/* sorry this is the best I could do with the underline! */
+.ridiculous-underline {
+    z-index: 2;
+    text-decoration: underline;
+    text-decoration-color: var(--themePurple);
+    text-decoration-thickness: 10px;
 }
