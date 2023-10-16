@@ -364,6 +364,7 @@ row .pathway-to-purchase {
 }
 
 .purple-underline {
+    text-decoration: none;
     display: inline-block;
     color: var(--themeBlue);
     border-bottom: 2px solid var(--themePurple);
