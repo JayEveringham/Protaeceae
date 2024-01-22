@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bouncing Balls with Sound</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        canvas {
+            display: block;
+            background: black;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        button {
+            z-index: 10;
+            /* Ensures the button is above other elements */
+            position: absolute;
+            /* Takes the button out of the normal flow */
+            top: 20px;
+            /* Position it a bit down from the top */
+            left: 20px;
+            /* Position it a bit in from the left */
+            padding: 10px;
+            background-color: white;
+            /* Make it stand out */
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="myCanvas"></canvas>
+    <button id="startButton">Start</button>
+    <script src="script.js"></script> <!-- Link to your external JS file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.min.js"
+        integrity="sha512-Siyxh4gyNM5SaERNa9BOZSPcu/auHyFUWn9OVFD7MxI3/dVPQklE7tfqS+pLmPHF1zo6UdDaJAp/thihrf0c7w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
