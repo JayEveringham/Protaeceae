@@ -1,0 +1,215 @@
+/* Define custom colors */
+:root {
+  --dark-olive-color: #182011;
+  --lime-green-color: #d4ff6d;
+  --light-purple-color: #976bff;
+  --mid-grey-color: #a9a9a9;
+  --light-grey-color: #eeeeee;
+  --white-color: #ffffff;
+}
+
+.semibold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+/* DNA logo */
+.cls-1 {
+  fill: none;
+  stroke: #ffffff;
+  stroke-miterlimit: 10;
+  /* stroke-width: 1.92px; */
+}
+
+/* initial logo text ("invisible") */
+#logo-text {
+  color: var(--dark-olive-color);
+}
+
+#breakpoint-indicator {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  padding: 0px;
+  color: hsla(10, 100%, 50%, 0.5);
+}
+.bg-dark-olive {
+  background-color: var(--dark-olive-color);
+}
+
+.text-white {
+  color: white;
+}
+
+.text-purple {
+  color: var(--light-purple-color);
+}
+
+.nav-link {
+  color: white;
+}
+.navbar .nav-link.active {
+  color: var(--lime-green-color);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='square' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.cls-1 {
+  stroke-width: 1.7;
+}
+
+.navbar-nav {
+  text-align: right;
+}
+
+.navbar .navbar-nav .nav-link {
+  padding-right: 13px;
+}
+
+.footer h5 {
+  line-height: 32px;
+  margin-bottom: 0px;
+}
+.footer li {
+  font-weight: 200;
+  line-height: 2;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+.footer-logo-text {
+  font-size: 2.5em;
+}
+
+.company-email {
+  color: var(--light-purple-color);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.logo-address-comms {
+  line-height: 0.3;
+}
+
+/* Resetting default link styles */
+.footer-links a {
+  color: inherit;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.footer a:hover,
+.nav-item a:hover {
+  color: var(--light-purple-color);
+}
+
+.home-hero-1 {
+  min-height: 94vh;
+  background-image: url("Hero/home-hero-1.png");
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  max-width: 1300px;
+}
+
+@media (min-width: 992px) {
+  .home-hero-1 {
+    background-size: contain;
+  }
+}
+
+.call-to-action {
+  color: var(--light-purple-color);
+  text-decoration: none;
+}
+
+.hero-feature-story {
+  background-image: url("Hero/hero-feature-story.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: left;
+}
+
+@media (max-width: 575px) {
+  .hero-feature-story {
+    background-position-x: -250px;
+  }
+}
+
+.story-preview {
+  background-color: white;
+  min-width: 50%;
+}
+
+.story-contstrain {
+  max-width: 300px;
+}
+
+.read-more {
+  text-align: right;
+}
+
+.blur-background {
+  filter: blur(8px);
+  transition: filter 1s ease-out; /* Adjust the transition time as needed */
+}
+
+.visible {
+  filter: blur(0);
+}
+
+.carousel-item img {
+  max-height: 100vh;
+  min-height: 50vh;
+  object-fit: cover;
+}
+
+.divider {
+  min-height: 8vh;
+  object-fit: cover;
+}
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(24, 32, 17, 0),
+    65%,
+    rgba(24, 32, 17, 1)
+  );
+  z-index: 0; /* Behind the caption */
+}
+
+.carousel-caption {
+  z-index: 1; /* Ensure it's above the gradient overlay */
+  padding-bottom: 0;
+  bottom: 0;
+}
