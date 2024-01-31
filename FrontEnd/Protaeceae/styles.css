@@ -22,6 +22,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "slnt" 0;
+  color: var(--dark-olive-color);
 }
 
 .bg-dark-olive {
@@ -159,15 +160,12 @@ body {
 
 .hero-feature-story {
   background-image: url("images/hero_home_feature.jpg");
+  /* filter: grayscale(100%); */
+  mix-blend-mode: lighten;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   background-position: left;
-}
-
-.bw {
-  filter: grayscale(100%);
-  height: calc(100vh - 57px);
 }
 
 @media (max-width: 575px) {
@@ -217,10 +215,7 @@ body {
   z-index: 1;
 }
 
-.divider {
-  height: 25vh;
-}
-
+/* #################################################################### ----- Carousel */
 .carousel-item::before {
   content: "";
   position: absolute;
@@ -243,7 +238,7 @@ body {
   bottom: 0;
 }
 
-/* Privacy policy hero overlays ##############################################################*/
+/* Privacy policy ##############################################################*/
 
 .hero-container {
   position: relative;
@@ -270,7 +265,6 @@ body {
 }
 
 .overlay2 {
-  background-image: url("images/tron_keyboard.png");
   /* min-height: 50vh; */
   background-size: cover;
   background-position: right center;
@@ -279,16 +273,15 @@ body {
   max-width: 50vw;
 }
 
+/* HERO TEXT */
 .text-layer {
   position: absolute;
-  right: 3%; /* Align to the right */
-  top: 50%; /* Start at the vertical center */
-  transform: translateY(
-    -50%
-  ); /* Shift upwards by half its height to center vertically */
-  width: auto; /* Set width as required */
-  max-width: 50%; /* Adjust max-width as needed */
-  text-align: right;
+  right: 5vw;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  max-width: 50%;
+  text-align: left;
 }
 
 @media (max-width: 768px) {
@@ -305,4 +298,58 @@ body {
     text-align: center;
     transform: translatex(50%);
   }
+}
+
+.bw {
+  filter: grayscale(100%);
+}
+
+/* Adding margin to top of policy headings*/
+.privacy-policy h4 {
+  margin-top: 2em;
+}
+
+/* #################################################################### ----- Dividers */
+
+.divider {
+  min-height: 13vh;
+  filter: grayscale(100%);
+  min-width: 100%;
+  mix-blend-mode: lighten;
+  background-size: cover;
+  background-position: center;
+}
+
+.divider-1 {
+  background-image: url("images/verdantAureya.png");
+  background-position: center center;
+}
+
+@media (max-width: 768px) {
+  .divider-1 {
+    background-size: 200%;
+  }
+}
+
+.divider-2 {
+  background-image: url("images/tron_keyboard.png");
+  filter: none;
+  background-position-y: 40%;
+  mix-blend-mode: lighten;
+  /* z-index: 0; Higher z-index than purple-overlay */
+}
+
+.divider-3 {
+  background-image: url("images/hero_home_feature.jpg");
+}
+
+.purple-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--light-purple-color);
+  mix-blend-mode: screen;
+  /* z-index: 1; Lower z-index */
 }
