@@ -307,6 +307,11 @@ body {
 /* Adding margin to top of policy headings*/
 .privacy-policy h4 {
   margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.privacy-policy p {
+  line-height: 2;
 }
 
 /* #################################################################### ----- Dividers */
