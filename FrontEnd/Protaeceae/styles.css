@@ -145,11 +145,12 @@ body {
   background-repeat: no-repeat;
   background-position-y: 38px;
   max-width: 1300px;
+  height: 100vh;
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .home-hero-1 {
-    background-size: contain;
+    height: 100svh;
   }
 }
 
@@ -349,8 +350,8 @@ body {
 }
 
 .divider-4 {
-  background-image: url("images/hero_shipping_2.png");
-  background-position-y: 30%;
+  background-image: url("images/hero_shipping_2.jpeg");
+  padding-top: 30.19%;
 }
 
 .purple-overlay {
