@@ -109,9 +109,9 @@
 
     <!-- NAV  ###################################################################### -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark-olive">
-      <div class="d-flex container-fluid justify-content-between px-lg-5">
+      <div class="d-flex justify-content-between container-fluid px-lg-5">
         <!-- LEFT-aligned LOGO -->
-        <div class="col-lg-4 col-md-2">
+        <div class="col-xl-4 col-lg-3 col-md-2">
           <a href="index.html" class="navbar-brand">
             <!-- SVG -->
             <?xml version="1.0" encoding="utf-8"?>
@@ -182,43 +182,51 @@
         </button>
 
         <!-- Collapsible Content -->
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarNav"
+        >
           <!-- CENTER aligned items -->
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="company.html">Company</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="research.html">Research</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="news.html">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="investors.html">Investors</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Genera/genera.html"
-                >Gener<span class="text-purple">α</span></a
-              >
-            </li>
-          </ul>
+          <div class="">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="company.html">Company</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="research.html">Research</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="investors.html">Investors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Genera/genera.html"
+                  >Gener<span class="text-purple">α</span></a
+                >
+              </li>
+            </ul>
+          </div>
 
           <!-- RIGHT aligned items -->
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="loginregister.html">Log In</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="cart.html">
-                <!-- <i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i> -->
-                <img src="SVG/cart2.svg" width="25px " height="25px" />
-              </a>
-            </li>
-          </ul>
+          <div class="">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="loginregister.html">Log In</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cart.html">
+                  <!-- <i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i> -->
+                  <img src="SVG/cart2.svg" width="25px " height="25px" />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>

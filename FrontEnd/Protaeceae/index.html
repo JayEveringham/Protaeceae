@@ -108,7 +108,7 @@
     <div id="breakpoint-indicator"></div>
 
     <!-- NAV  ###################################################################### -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark-olive">
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark-olive">
       <div class="d-flex justify-content-between container-fluid px-lg-5">
         <!-- LEFT-aligned LOGO -->
         <div class="col-xl-4 col-lg-3 col-md-2">
@@ -232,17 +232,22 @@
     </nav>
 
     <!-- HERO 1 ################################################################################################ -->
-    <div class="container-fluid px-lg-5 px-md-3 home-hero-1 d-flex">
-      <div class="row w-100 align-items-end" style="height: 85vh">
+    <div class="container-fluid px-lg-5 px-md-3 home-hero-1 d-flex vh-100">
+      <div class="row w-100 align-items-end">
         <div class="col py-5 px-md-5">
-          <h1 class="display-3 animate-text">
+          <h1 class="display-3 animate-text text-center text-md-start">
             A revolution in botany is here.
           </h1>
-          <h5 class="display-6 animate-text" style="margin-bottom: 100px">
+          <h5
+            class="display-6 animate-text text-center text-md-start"
+            style="margin-bottom: 80px"
+          >
             Australian natives reimagined.
           </h5>
           <a class="call-to-action" href="#"
-            ><h5 class="text-center">Discover our creations ></h5></a
+            ><h5 class="text-center" style="margin-bottom: 80px">
+              Discover our creations >
+            </h5></a
           >
         </div>
       </div>

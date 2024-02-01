@@ -23,3 +23,20 @@ document.addEventListener("DOMContentLoaded", function () {
     wrap: true,
   });
 });
+
+// Make Navbar Opaque After Scrolling Down X Pixels
+const navbar = document.querySelector(".navbar");
+
+// Function to adjust navbar opacity
+function adjustNavbarOpacity() {
+  const scrollThreshold = 10;
+
+  if (window.scrollY > scrollThreshold) {
+    navbar.style.backgroundColor = "rgba(24, 32, 17, 1)";
+  } else {
+    navbar.style.backgroundColor = "rgba(255, 0, 0, 0)";
+  }
+}
+
+// // Listen for scroll events on the window
+// window.addEventListener("scroll", adjustNavbarOpacity);

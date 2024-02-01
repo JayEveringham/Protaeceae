@@ -140,10 +140,10 @@ body {
 
 .home-hero-1 {
   background-image: url("images/hero_home_1.png");
-  min-height: 94vh;
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
+  background-position-y: 38px;
   max-width: 1300px;
 }
 
