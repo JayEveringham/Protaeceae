@@ -405,3 +405,10 @@ body {
     );
   }
 }
+
+hr {
+  opacity: 1;
+  height: 1px;
+  border: none;
+  background-color: var(--light-grey-color);
+}
