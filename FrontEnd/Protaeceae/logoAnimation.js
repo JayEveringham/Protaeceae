@@ -25,7 +25,6 @@ function getRandomColor() {
 // SVG line colour change
 function applyColorToStrand(color, index) {
   const lineIndex = 4 - (index % 4); // cycle over lines
-  console.log(`Line index: ${lineIndex}`);
   const selectedLines = document.querySelectorAll(`.line-${lineIndex}`);
 
   selectedLines.forEach((line) => {

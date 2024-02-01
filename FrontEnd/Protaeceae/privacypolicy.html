@@ -225,22 +225,30 @@
 
     <!-- FEATURE STORY HERO #################################################################################### -->
 
-    <div class="hero-container">
-      <div class="image-layer base-layer"></div>
-      <div class="image-layer overlay1"></div>
-      <div
-        class="image-layer overlay2"
-        style="background-image: url('images/hero_privacy_cropped.png')"
-      ></div>
-      <div class="hero-text text-layer">
-        <h1 class="hero-title text-white fs-1">Your data in capable hands.</h1>
+    <div class="container d-flex hero-shipping-container overflow-hidden">
+      <div class="row d-flex align-items-center">
+        <div class="col-12 col-md-6 px-0 mx-0">
+          <div class="position-relative">
+            <img
+              class="img-fluid hero-ship"
+              src="images/hero_privacy_cropped.png"
+              alt="a lock made of flowers"
+            />
+          </div>
+        </div>
+        <div
+          class="col-12 col-md-6 d-flex align-items-center justify-content-center"
+        >
+          <h1 class="display-5 text-center animate-text text-md-end">
+            Your data in capable hands.
+          </h1>
+        </div>
       </div>
     </div>
 
     <!-- PRIVACY POLICY ###################################################################################### -->
     <div class="container py-5 privacy-policy text-white">
       <section>
-        <h2>Privacy Policy</h2>
         <p>Last updated: 27/08/2023</p>
       </section>
 
@@ -571,5 +579,6 @@
     <script src="logoAnimation.js"></script>
     <script src="breakpointIndicator.js"></script>
     <script src="script.js"></script>
+    <script src="herotextAnimation.js"></script>
   </body>
 </html>

@@ -225,17 +225,27 @@
 
     <!-- FEATURE STORY HERO #################################################################################### -->
 
-    <div class="hero-container">
-      <!-- <div class="image-layer base-layer"></div>
-      <div class="image-layer overlay1"></div> -->
-      <div
-        class="image-layer overlay2"
-        style="background-image: url('images/hero_shipping.png')"
-      ></div>
-      <div class="hero-text text-layer">
-        <h1 class="hero-title text-white fs-1 text-center">
-          Reliable, fast, climate-controlled shipping.
-        </h1>
+    <div class="container-fluid d-flex hero-shipping-container overflow-hidden">
+      <!-- <div class="shipping-overlay"></div> -->
+      <div class="row d-flex align-items-center">
+        <div class="col-12 col-md-8 px-0 mx-0">
+          <div class="position-relative">
+            <img
+              class="img-fluid hero-ship"
+              src="images/hero_shipping.png"
+              alt="a container ship riding waves of protaeceae flowers"
+            />
+            <div class="shipping-overlay position-absolute"></div>
+            <div
+              class="shipping-overlay shipping-overlay-2 position-absolute"
+            ></div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <h1 class="display-5 animate-text text-center text-md-end">
+            Reliable, fast, climate-controlled shipping.
+          </h1>
+        </div>
       </div>
     </div>
 
@@ -325,8 +335,7 @@
 
     <!-- DIVIDER ############################################################################################# -->
     <div class="position-relative">
-      <div class="purple-overlay"></div>
-      <div class="divider divider-3"></div>
+      <div class="divider divider-4"></div>
     </div>
     <!-- FOOTER ############################################################################################## -->
 
@@ -561,5 +570,6 @@
     <script src="logoAnimation.js"></script>
     <script src="breakpointIndicator.js"></script>
     <script src="script.js"></script>
+    <script src="herotextAnimation.js"></script>
   </body>
 </html>
