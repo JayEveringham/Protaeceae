@@ -405,7 +405,7 @@ body {
   max-height: var(--adjusted-VH);
 }
 
-@media (max-width: 768px) {
+
   .lock {
     object-fit: contain;
   }
