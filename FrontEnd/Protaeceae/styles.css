@@ -7,7 +7,7 @@
   --light-grey-color: #eeeeee;
   --white-color: #ffffff;
   --nav-height: 54px;
-  --breadcrumb-height: 50px;
+  --breadcrumb-height: 66px;
   --adjusted-VH: calc(100vh - var(--nav-height) - var(--breadcrumb-height));
 }
 
