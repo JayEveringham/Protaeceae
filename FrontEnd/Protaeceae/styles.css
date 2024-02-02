@@ -394,7 +394,7 @@ body {
   object-position: top;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .hero-ship {
     max-height: 60vh;
   }
@@ -402,6 +402,12 @@ body {
 
 .hero-shipping-container {
   max-height: var(--adjusted-VH);
+}
+
+@media (max-width: 768px) {
+  .lock {
+    object-fit: contain;
+  }
 }
 
 .shipping-overlay {
