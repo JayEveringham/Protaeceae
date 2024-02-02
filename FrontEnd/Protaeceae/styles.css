@@ -403,7 +403,7 @@ body {
 }
 
 .hero-shipping-container {
-  min-height: var(--adjusted-VH);
+  max-height: var(--adjusted-VH);
 }
 
 .lock {
