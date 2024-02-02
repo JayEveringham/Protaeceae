@@ -431,3 +431,10 @@ hr {
   border: none;
   background-color: var(--light-grey-color);
 }
+
+/* #################################################################### ----- Breadcrumb */
+
+.breadcrumb {
+  border-bottom: 1px solid var(--light-purple-color);
+  position: relative;
+}
