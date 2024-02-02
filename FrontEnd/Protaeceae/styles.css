@@ -241,10 +241,10 @@ body {
 
 /* Privacy policy ##############################################################*/
 
-.hero-container {
+/* .hero-container {
   position: relative;
   height: 75vh;
-}
+} */
 
 .image-layer {
   position: absolute;
@@ -255,6 +255,10 @@ body {
 .base-layer {
   background-color: var(--light-purple-color);
   mix-blend-mode: screen;
+}
+
+.lighten {
+  mix-blend-mode: lighten;
 }
 
 .overlay1 {
@@ -364,6 +368,19 @@ body {
   background-color: var(--light-purple-color);
   mix-blend-mode: screen;
   /* z-index: 1; Lower z-index */
+}
+
+.gradient-purple-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(24, 32, 17, 1),
+    var(--light-purple-color)
+  );
 }
 
 .hero-ship {
