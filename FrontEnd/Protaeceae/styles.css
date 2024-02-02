@@ -148,7 +148,7 @@ body {
   background-size: cover;
   background-position: right top;
   background-repeat: no-repeat;
-  max-width: 1300px;
+  /* max-width: 1300px; */
   height: calc(100vh - var(--nav-height));
 }
 
