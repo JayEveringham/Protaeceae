@@ -402,13 +402,11 @@ body {
 }
 
 .hero-shipping-container {
-  max-height: var(--adjusted-VH);
+  min-height: var(--adjusted-VH);
 }
 
-
-  .lock {
-    object-fit: contain;
-  }
+.lock {
+  object-fit: contain;
 }
 
 .shipping-overlay {
