@@ -125,8 +125,8 @@ body {
   font-weight: 800;
 }
 
-.logo-address-comms {
-  line-height: 0.3;
+.logo-address-comms p {
+  margin: 0;
 }
 
 /* Resetting default link styles */
