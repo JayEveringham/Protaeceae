@@ -370,6 +370,7 @@ body {
 
 .divider-4 {
   background-image: url("images/hero_shipping_2.jpeg");
+  /* filter: none; */
   padding-top: 30.19%;
 }
 
