@@ -248,6 +248,10 @@ body {
   bottom: 0;
 }
 
+.carousel-item img {
+  object-position: top;
+}
+
 /* Privacy policy ##############################################################*/
 
 /* .hero-container {
