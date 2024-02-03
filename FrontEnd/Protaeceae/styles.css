@@ -521,8 +521,21 @@ hr {
   background-position: -350px -40px;
 }
 
+.genera-category-image-grevillea {
+  background-size: 220%;
+  background-position: -100px -40px;
+}
+
+.genera-category-image-grevillea {
+  background-size: 220%;
+  background-position: -100px -40px;
+}
+
 @media (min-width: 1200px) {
   .genera-category-image-grevillea {
+    background-size: 150%;
+    background-position: -150px -40px;
+    width: 700px;
   }
 
   .genera-category-image-banksia {
@@ -532,5 +545,16 @@ hr {
   }
 
   .genera-category-image-callistemon {
+    background-position: 0px -40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .dark-horisontal-overlay {
+    width: 100%;
+  }
+
+  .light-horisontal-overlay {
+    width: 100%;
   }
 }
