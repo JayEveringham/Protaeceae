@@ -466,3 +466,71 @@ hr {
   position: relative;
   height: 50px;
 }
+
+/* #################################################################### ----- Genera */
+
+.genera-category-container {
+  position: relative;
+  height: 300px;
+}
+
+.genera-category-text {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  /* backdrop-filter: blur(5px); */
+}
+
+.genera-category-image {
+  position: absolute;
+  height: 100%;
+  width: 500px;
+  z-index: 0;
+}
+
+.light-horisontal-overlay {
+  position: absolute;
+  height: 100%;
+  width: 500px;
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0)
+  );
+  z-index: 1;
+}
+
+.dark-horisontal-overlay {
+  position: absolute;
+  height: 100%;
+  width: 500px;
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(24, 32, 17, 1),
+    rgba(24, 32, 17, 0)
+  );
+  z-index: 1;
+}
+
+/* POSITION OF IMAGES LESS THAN XL */
+
+.genera-category-image-banksia {
+  background-size: 220%;
+  background-position: -350px -40px;
+}
+
+@media (min-width: 1200px) {
+  .genera-category-image-grevillea {
+  }
+
+  .genera-category-image-banksia {
+    background-size: 120%;
+    width: 800px;
+    background-position: -150px -40px;
+  }
+
+  .genera-category-image-callistemon {
+  }
+}
