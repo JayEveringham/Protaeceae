@@ -68,7 +68,7 @@ body {
 
 /* animate-text */
 .animate-text {
-opacity: 0;
+  opacity: 0;
 }
 
 .nav-link {
@@ -351,9 +351,9 @@ opacity: 0;
 
 .divider-1 {
   background-image: url("images/verdantAureya_small.jpeg");
-  background-position: -50px center;
-  background-size: 10%
-  background-repeat:none;
+  background-position: center center;
+  background-size: 90%;
+  background-repeat: no-repeat;
   margin-top: 70px;
 }
 
@@ -521,8 +521,6 @@ hr {
   z-index: 1;
 }
 
-/* POSITION OF IMAGES LESS THAN XL */
-
 .genera-category-image-banksia {
   background-size: 220%;
   background-position: -350px -40px;
@@ -537,6 +535,8 @@ hr {
   background-size: 220%;
   background-position: -100px -40px;
 }
+
+/* POSITION OF IMAGES LESS THAN XL */
 
 @media (min-width: 1200px) {
   .genera-category-image-grevillea {
@@ -566,3 +566,42 @@ hr {
   }
 }
 
+/* #################################################################### ----- COMPANY.HTML */
+
+.company-hero-container {
+  background-size: auto;
+  background-position: 100px 100px;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .company-hero-container {
+    /* BACKGROUND SIZE IS STILL AUTO */
+    background-size: 100%;
+    background-position: 190px 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .company-hero-container {
+    /* BACKGROUND SIZE IS STILL AUTO */
+    background-size: auto;
+    background-position: 30px -20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .company-hero-container {
+    /* BACKGROUND SIZE IS STILL AUTO */
+    background-size: auto;
+    background-position: 230px -30px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .company-hero-container {
+    /* BACKGROUND SIZE IS STILL AUTO */
+    background-size: auto;
+    background-position: 230px -30px;
+  }
+}
