@@ -66,6 +66,11 @@ body {
   color: var(--dark-olive-color);
 }
 
+/* animate-text */
+.animate-text {
+opacity: 0;
+}
+
 .nav-link {
   color: white;
 }
@@ -345,8 +350,10 @@ body {
 }
 
 .divider-1 {
-  background-image: url("images/verdantAureya.png");
-  background-position: center center;
+  background-image: url("images/verdantAureya_small.jpeg");
+  background-position: -50px center;
+  background-size: 10%
+  background-repeat:none;
   margin-top: 70px;
 }
 
@@ -558,3 +565,4 @@ hr {
     width: 100%;
   }
 }
+
