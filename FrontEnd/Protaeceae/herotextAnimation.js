@@ -31,14 +31,11 @@ window.onload = function () {
       if (index < maxIndex) {
         spans[index].style.opacity = "1"; // Show the letter
         spans[index].style.color = getRandomColor();
+        // spans[index].style.textDecoration = "underline white"; // Underline
         setTimeout(() => {
-          if (index < maxIndex - 1) {
-            spans[index].style.color = "#ffffff"; // Reset color except for the last letter
-          } else if (index === maxIndex - 1) {
-            // Set the last letter to purple
-            spans[index].style.color = "#976bff";
-            console.log(maxIndex);
-          }
+          spans[index].style.color =
+            index < maxIndex - 1 ? "#ffffff" : "#976bff"; // Reset color
+          // spans[index].style.textDecoration = "none"; // Remove underline
           index++;
           showLetter();
         }, 50);
@@ -71,7 +68,7 @@ window.onload = function () {
     }
   );
 
-  // Observe elements with the class 'display-5'
+  // Observe elements with the animation class
   document.querySelectorAll(".animate-text").forEach((element) => {
     observer.observe(element);
   });
