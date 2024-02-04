@@ -633,3 +633,19 @@ hr {
     height: 400px;
   }
 }
+
+.btn {
+  border-radius: 0px;
+  padding: 15px 25px;
+}
+
+.card,
+.card img {
+  border-radius: 0px;
+}
+
+/* Doesn't look that great */
+/* .card h5 {
+  border-top: 1px solid #976bff;
+  width: 50%;
+} */
