@@ -618,3 +618,18 @@ hr {
     background-position: 230px -30px;
   }
 }
+
+.upper-border {
+  border-top: 1px solid var(--light-purple-color);
+}
+
+.card-row img {
+  height: 500px;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .card-row img {
+    height: 400px;
+  }
+}
