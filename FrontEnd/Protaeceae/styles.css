@@ -381,6 +381,10 @@ body {
   padding-top: 30.19%;
 }
 
+.divider-5 {
+  background-image: url("images/divider_bokehflower.jpeg");
+}
+
 .purple-overlay {
   position: absolute;
   height: 100%;
