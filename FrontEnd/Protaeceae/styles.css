@@ -627,6 +627,10 @@ hr {
   border-top: 1px solid var(--light-purple-color);
 }
 
+.lower-border {
+  border-bottom: 1px solid var(--light-purple-color);
+}
+
 .card-row img {
   height: 500px;
   object-fit: cover;
