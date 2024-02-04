@@ -649,6 +649,10 @@ hr {
   border-radius: 0px;
 }
 
+.disabled {
+  border-color: grey !important;
+  color: grey !important;
+}
 /* Doesn't look that great */
 /* .card h5 {
   border-top: 1px solid #976bff;
