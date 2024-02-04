@@ -471,11 +471,29 @@ hr {
 /* #################################################################### ----- Breadcrumb */
 
 .breadcrumb {
+  margin-bottom: 0;
+  padding: 10px 0px 10px 0px;
+}
+
+.breadcrumb .container {
   display: flex;
   align-items: flex-end;
   border-bottom: 1px solid var(--light-purple-color);
-  position: relative;
   height: 50px;
+  color: white;
+}
+
+.breadcrumb .container h1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.breadcrumb-light {
+  background-color: white;
+  color: var(--dark-olive-color);
+}
+
+.breadcrumb-light .container {
+  color: var(--dark-olive-color);
 }
 
 /* #################################################################### ----- Genera */
