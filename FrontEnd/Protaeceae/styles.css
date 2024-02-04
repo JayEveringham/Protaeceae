@@ -639,6 +639,11 @@ hr {
   padding: 15px 25px;
 }
 
+.btn:hover {
+  background-color: var(--light-purple-color);
+  border-color: var(--light-purple-color);
+  color: white;
+}
 .card,
 .card img {
   border-radius: 0px;
