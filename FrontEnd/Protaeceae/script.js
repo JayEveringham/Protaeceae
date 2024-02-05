@@ -37,3 +37,13 @@ function adjustNavbarOpacity() {
     navbar.style.backgroundColor = "rgba(255, 0, 0, 0)";
   }
 }
+
+// TOGGLE HEART
+document.querySelectorAll(".toggle-heart").forEach((item) => {
+  item.addEventListener("click", function () {
+    this.src = this.src.includes("heart.svg")
+      ? "SVG/heart-filled.svg"
+      : "SVG/heart.svg";
+    console.log("clicked");
+  });
+});
