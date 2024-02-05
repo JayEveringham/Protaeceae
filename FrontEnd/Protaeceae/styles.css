@@ -718,12 +718,23 @@ hr {
   font-style: italic;
 }
 
-/* .species-card-img {
-  width: 100%;
-  overflow: hidden;
-  min-height: 200px;
-  background-size: 150%;
-  background-repeat: no-repeat;
-  background-position: center top;
+.species-cards .card-img-top {
+  object-fit: cover;
+  height: 350px;
   /* background-size: 200%; */
+}
+
+/* .rowvh {
+  height: 100vh;
 } */
+
+.blurb-container {
+  max-width: 450px;
+  /* border-left: 1px solid var(--mid-grey-color); */
+}
+
+.genera-blurb {
+  font-style: italic;
+  color: var(--mid-grey-color);
+  font-size: 1em;
+}
