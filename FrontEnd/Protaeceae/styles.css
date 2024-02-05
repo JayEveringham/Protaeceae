@@ -695,3 +695,7 @@ hr {
   border-top: 1px solid #976bff;
   width: 50%;
 } */
+
+.investors img {
+  height: 300px;
+}
