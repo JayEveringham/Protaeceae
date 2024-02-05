@@ -37,6 +37,3 @@ function adjustNavbarOpacity() {
     navbar.style.backgroundColor = "rgba(255, 0, 0, 0)";
   }
 }
-
-// // Listen for scroll events on the window
-// window.addEventListener("scroll", adjustNavbarOpacity);

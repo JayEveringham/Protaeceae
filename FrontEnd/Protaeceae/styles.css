@@ -720,8 +720,14 @@ hr {
 
 .species-cards .card-img-top {
   object-fit: cover;
-  height: 350px;
+  min-height: 350px;
   /* background-size: 200%; */
+}
+
+@media (min-width: 992px) {
+  .species-cards .card-img-top {
+    height: 350px;
+  }
 }
 
 /* .rowvh {
@@ -737,4 +743,19 @@ hr {
   font-style: italic;
   color: var(--mid-grey-color);
   font-size: 1em;
+}
+
+.species-cards .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* This applies the hover effect to the card when the card itself is hovered */
+.species-cards .card:hover {
+  transform: scale(1.05);
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); */
+}
+
+.heart {
+  position: relative;
+  z-index: 2;
 }
