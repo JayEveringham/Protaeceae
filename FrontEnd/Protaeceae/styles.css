@@ -661,6 +661,10 @@ hr {
   object-fit: cover;
 }
 
+.news .card img {
+  height: 300px;
+}
+
 @media (max-width: 991px) {
   .card-row img {
     height: 400px;
