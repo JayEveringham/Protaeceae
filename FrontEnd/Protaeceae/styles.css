@@ -503,6 +503,15 @@ hr {
   color: var(--dark-olive-color);
 }
 
+.breadcrumb-link {
+  text-decoration: none;
+  color: var(--mid-grey-color);
+}
+
+.breadcrumb-link:hover {
+  color: var(--light-purple-color);
+}
+
 /* #################################################################### ----- Genera */
 
 .genera-category-container {
@@ -699,3 +708,22 @@ hr {
 .investors img {
   height: 300px;
 }
+
+.heart {
+  height: 30px;
+  width: 30px;
+}
+
+.binomial {
+  font-style: italic;
+}
+
+/* .species-card-img {
+  width: 100%;
+  overflow: hidden;
+  min-height: 200px;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  /* background-size: 200%; */
+} */

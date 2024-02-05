@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Protaeceae | Generα</title>
+
+    <!-- FAVICON -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#182011" />
+    <meta
+      name="msapplication-TileImage"
+      content="favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#182011" />
+
+    <!-- BS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-dark-olive">
+    <!-- breakpoint indicator ----------------------->
+    <div id="breakpoint-indicator"></div>
+
+    <!-- NAV  ###################################################################### -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark-olive">
+      <div class="d-flex justify-content-between container-fluid px-lg-5">
+        <!-- LEFT-aligned LOGO -->
+        <div class="col-xl-4 col-lg-3 col-md-2">
+          <a href="index.html" class="navbar-brand">
+            <!-- SVG -->
+            <?xml version="1.0" encoding="utf-8"?>
+            <svg
+              width="35px "
+              height="35px"
+              preserveAspectRatio="none"
+              viewBox="0 0 24 24"
+              id="Layer_1"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Company Logo</title>
+              <desc>A graphical representation of the Protaeceae brand.</desc>
+              <line
+                class="cls-1 line-1"
+                x1="19.49"
+                y1="3.38"
+                x2="8.17"
+                y2="3.38"
+              />
+              <line
+                class="cls-1 line-2"
+                x1="18.02"
+                y1="7.21"
+                x2="10.08"
+                y2="7.21"
+              />
+              <line
+                class="cls-1 line-3"
+                x1="13.92"
+                y1="16.79"
+                x2="5.98"
+                y2="16.79"
+              />
+              <line
+                class="cls-1 line-4"
+                x1="15.83"
+                y1="20.63"
+                x2="4.51"
+                y2="20.63"
+              />
+              <path
+                class="cls-1"
+                d="M19.67.5h0a12,12,0,0,1-6,10.59L12,12l-1.67-.91A12,12,0,0,1,4.33.5h0"
+              />
+              <path
+                class="cls-1"
+                d="M4.33,23.5h0a12,12,0,0,1,6-10.59L12,12l1.67.91a12,12,0,0,1,6,10.59h0"
+              /></svg
+            ><!-- logo text --><span
+              class="d-md-none d-lg-inline-block semibold align-middle"
+              id="logo-text"
+              >Protaeceae</span
+            >
+          </a>
+        </div>
+
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Content -->
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarNav"
+        >
+          <!-- CENTER aligned items -->
+          <div class="">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="company.html">Company</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="research.html">Research</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="investors.html">Investors</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="genera.html"
+                  >Gener<span class="text-purple">α</span></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- RIGHT aligned items -->
+          <div class="">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="loginregister.html">Log In</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cart.html">
+                  <!-- <i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i> -->
+                  <img src="SVG/cart2.svg" class="cart" alt="Shopping Cart" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- BREADCRUMB #################################################################################### -->
+    <div class="container-fluid breadcrumb breadcrumb-light">
+      <div class="container">
+        <h1>
+          <a href="genera.html" class="breadcrumb-link"
+            ><span>Generaα / </span> </a
+          >Grevillea
+        </h1>
+      </div>
+    </div>
+    <!-- HEROs #################################################################################### -->
+    <main class="wbg pb-5">
+      <div class="container species-cards">
+        <div class="row">
+          <!----------------------------------- Card 1 -->
+          <div class="col-lg-4">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/sunsetGlow.png"
+                alt="image of Sunset Glow grevillea"
+              />
+              <!-- <div
+                class="species-card-img"
+                style="background-image: url('images/sunsetGlow.png')"
+                alt="Sunset Glow"
+              ></div> -->
+              <div class="card-body">
+                <!-- Text & Heart -->
+                <div class="row">
+                  <div class="col">
+                    <small class="binomial">Grevillea bipinnatifida</small>
+                    <h3 class="card-title">Sunset Glow</h3>
+                  </div>
+                  <div
+                    class="col-2 d-flex justify-content-end align-items-center pr-4"
+                  >
+                    <img
+                      src="SVG/heart.svg"
+                      alt="favourite heart"
+                      class="heart"
+                    />
+                  </div>
+                </div>
+
+                <!-- /text&heart-->
+              </div>
+            </div>
+          </div>
+          <!----------------------------------//-->
+          <!-- Card 2 -->
+          <!-- Card 3 -->
+        </div>
+      </div>
+    </main>
+    <!-- DIVIDER ################################################################################################# -->
+    <div class="divider divider-1"></div>
+
+    <!-- FOOTER ############################################################################################## -->
+    <div id="footer-placeholder"></div>
+
+    <!-- SCRIPTS ##############################################################################################-->
+
+    <!-- Intersection observer (hero text animation) 
+      Backward compatible with iOS 10 -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/5b4d08dad8.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Load reusable components -->
+    <script src="load-components.js"></script>
+
+    <!-- intersection observer iOS 10 fix -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
+
+    <!-- logo animation -->
+    <script src="logoAnimation.js"></script>
+
+    <!-- hero text animation -->
+    <script src="herotextAnimation.js"></script>
+
+    <script src="breakpointIndicator.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
