@@ -183,6 +183,13 @@ body {
   background-position: left;
 }
 
+/* WHITE BACKGROUND */
+.wbg,
+.wbg .hero-feature-story {
+  background-color: white;
+  mix-blend-mode: normal;
+}
+
 @media (max-width: 575px) {
   .hero-feature-story {
     background-position-x: -250px;
