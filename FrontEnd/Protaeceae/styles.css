@@ -720,13 +720,14 @@ hr {
 
 .species-cards .card-img-top {
   object-fit: cover;
-  min-height: 350px;
+  /* min-height: 350px; */
   /* background-size: 200%; */
 }
 
 @media (min-width: 992px) {
   .species-cards .card-img-top {
-    height: 350px;
+    max-height: 350px;
+    aspect-ratio: 1/1;
   }
 }
 
