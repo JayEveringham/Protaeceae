@@ -354,6 +354,7 @@ body {
   mix-blend-mode: lighten;
   background-size: cover;
   background-position: center;
+  margin-top: 60px;
 }
 
 .divider-1 {
@@ -361,7 +362,6 @@ body {
   background-position: center center;
   background-size: 90%;
   background-repeat: no-repeat;
-  margin-top: 70px;
 }
 
 @media (max-width: 768px) {
@@ -390,6 +390,10 @@ body {
 
 .divider-5 {
   background-image: url("images/divider_bokehflower.jpeg");
+}
+
+.divider-6 {
+  background-image: url("images/divider_blossomCascade.jpeg");
 }
 
 .purple-overlay {
