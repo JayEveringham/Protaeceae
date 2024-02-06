@@ -47,3 +47,16 @@ document.querySelectorAll(".toggle-heart").forEach((item) => {
     console.log("clicked");
   });
 });
+
+// Scale up and down cards on touch
+document.querySelectorAll(".species-cards .card").forEach((card) => {
+  card.addEventListener("touchstart", function () {
+    // Scale up when touched
+    this.style.transform = "scale(1.05)";
+  });
+
+  card.addEventListener("touchend", function () {
+    // Scale back down when touch ends
+    this.style.transform = "scale(1)";
+  });
+});

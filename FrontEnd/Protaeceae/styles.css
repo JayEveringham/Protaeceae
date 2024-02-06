@@ -694,6 +694,7 @@ hr {
   border-color: var(--light-purple-color);
   color: white;
 }
+
 .card,
 .card img {
   border-radius: 0px;
@@ -714,8 +715,8 @@ hr {
 }
 
 .heart {
-  height: 30px;
-  width: 30px;
+  min-height: 30px;
+  min-width: 30px;
 }
 
 .binomial {
@@ -725,8 +726,6 @@ hr {
 .species-cards .card-img-top {
   object-fit: cover;
   object-position: top;
-  /* min-height: 350px; */
-  /* background-size: 200%; */
 }
 
 @media (min-width: 992px) {
@@ -755,10 +754,9 @@ hr {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* This applies the hover effect to the card when the card itself is hovered */
+/* Card hover effect */
 .species-cards .card:hover {
   transform: scale(1.05);
-  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); */
 }
 
 .heart {
