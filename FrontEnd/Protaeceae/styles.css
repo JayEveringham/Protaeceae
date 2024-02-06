@@ -715,8 +715,16 @@ hr {
 }
 
 .heart {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.heart img {
   min-height: 30px;
   min-width: 30px;
+  margin: 10px;
 }
 
 .binomial {
@@ -757,9 +765,4 @@ hr {
 /* Card hover effect */
 .species-cards .card:hover {
   transform: scale(1.05);
-}
-
-.heart {
-  position: relative;
-  z-index: 2;
 }
