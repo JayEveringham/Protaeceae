@@ -818,4 +818,29 @@ hr {
   font-size: 1.5em;
   font-weight: 600;
   color: var(--light-purple-color);
+  padding-top: 10px;
+}
+
+.droplet {
+  height: 20px;
+}
+
+.product-blurb {
+  margin-top: 10px;
+}
+
+.full-title {
+  /* display: inline-block; */
+}
+
+#pbr {
+  /* position: absolute;
+  top: 5px;
+  left: 232px; */
+  height: 28px;
+  margin-left: 6px;
+  margin-bottom: 4px;
+  opacity: 0;
+  transition: opacity 2s ease-out;
+  transition-delay: 2s;
 }
