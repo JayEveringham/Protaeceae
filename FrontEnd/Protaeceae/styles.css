@@ -396,6 +396,12 @@ body {
   background-image: url("images/divider_blossomCascade.jpeg");
 }
 
+.divider-7 {
+  background-image: url("images/divider_accounts.jpeg");
+  mix-blend-mode: lighten;
+  background-position-y: 20%;
+}
+
 .purple-overlay {
   position: absolute;
   height: 100%;
@@ -848,6 +854,11 @@ hr {
 .form-control {
   border-radius: 0px;
   background-color: var(--dark-olive-color);
+}
+
+.wbg .form-control {
+  background-color: white;
+  border-color: black;
 }
 
 .form-control::placeholder {
