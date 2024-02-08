@@ -83,5 +83,6 @@ window.onload = function () {
   document.querySelectorAll(".animate-text").forEach((element) => {
     observer.observe(element);
   });
-  document.querySelector("#pbr").style.opacity = "0.4";
+  // PBR opacity
+  document.querySelector("#pbr").style.opacity = "0.3";
 };
