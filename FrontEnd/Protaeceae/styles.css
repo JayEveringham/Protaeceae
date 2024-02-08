@@ -844,3 +844,16 @@ hr {
   transition: opacity 1s ease-in;
   transition-delay: 0.8s;
 }
+
+.form-control {
+  border-radius: 0px;
+  background-color: var(--dark-olive-color);
+}
+
+.form-control::placeholder {
+  color: var(--mid-grey-color);
+}
+
+/* .form-control:valid {
+  background-color: var(--dark-olive-color);
+} */
