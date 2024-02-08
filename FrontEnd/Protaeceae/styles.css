@@ -868,3 +868,13 @@ hr {
 /* .form-control:valid {
   background-color: var(--dark-olive-color);
 } */
+
+.form-check-label {
+  color: var(--dark-olive-color);
+}
+
+.form-check-input {
+  border-color: var(--dark-olive-color);
+  border-radius: 0 !important;
+  margin-right: 5px;
+}
