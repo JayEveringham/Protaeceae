@@ -878,3 +878,29 @@ hr {
   border-radius: 0 !important;
   margin-right: 5px;
 }
+
+.shipping-account-remind {
+  border-left: 1px solid var(--dark-olive-color);
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.shipping-account-remind p {
+  margin-bottom: 0px;
+}
+
+.shipping-account-remind a {
+  color: var(--light-purple-color);
+}
+
+.input-group-prepend,
+.custom-select {
+  border: 1px solid var(--dark-olive-color) !important;
+  border-radius: 0px !important;
+  background-color: white !important;
+}
+
+.input-group-text {
+  background-color: white;
+  color: var(--mid-grey-color);
+}

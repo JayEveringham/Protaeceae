@@ -240,144 +240,298 @@
 
     <!-- MAIN #################################################################################### -->
     <main class="wbg">
-      <div class="container text-white contact-container pb-5">
+      <div class="container contact-container pb-5">
+        <div class="shipping-account-remind">
+          <p>
+            Already an account holder?
+            <a href="loginregister.html">Log in</a>
+          </p>
+        </div>
         <div class="row">
           <div class="col-lg-6">
             <!-- BREADCRUMB #################################################################################### -->
             <div class="container-fluid breadcrumb mb-4 breadcrumb-light">
               <div class="container">
                 <h1>
-                  <span class="text-nowrap">Log in</span>
-                </h1>
-              </div>
-            </div>
-            <form action="contact.php" method="post">
-              <div class="mb-3">
-                <label for="login-email" class="visually-hidden">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="login-email"
-                  name="login-email"
-                  placeholder="Email"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="login-password" class="visually-hidden"
-                  >Password</label
-                >
-                <input
-                  type="password"
-                  class="form-control"
-                  id="login-password"
-                  name="login-password"
-                  placeholder="Password"
-                />
-              </div>
-              <button
-                type="submit"
-                class="btn btn-outline-dark btn-md disabled mb-5"
-                style="width: 100%"
-              >
-                Log In
-              </button>
-            </form>
-          </div>
-          <div class="col-lg-6 text-end">
-            <!-- BREADCRUMB #################################################################################### -->
-            <div class="container-fluid breadcrumb mb-4 breadcrumb-light">
-              <div class="container">
-                <h1>
-                  <span class="text-nowrap">Register</span>
+                  <span class="text-nowrap">Shipping details</span>
                 </h1>
               </div>
             </div>
 
             <form action="contact.php" method="post">
               <div class="mb-3">
-                <label for="register-fname" class="visually-hidden"
-                  >First Name</label
-                >
+                <label for="name" class="visually-hidden">Name</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="register-fname"
-                  name="register-fname"
-                  placeholder="First Name"
+                  id="name"
+                  name="name"
+                  placeholder="Name"
                   required
                 />
               </div>
               <div class="mb-3">
-                <label for="register-lname" class="visually-hidden"
-                  >Last Name</label
-                >
+                <label for="last-name" class="visually-hidden">Last Name</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="register-lname"
-                  name="register-lname"
+                  id="last-name"
+                  name="last-name"
                   placeholder="Last Name"
                   required
                 />
               </div>
               <div class="mb-3">
-                <label for="register-email" class="visually-hidden"
-                  >Email</label
-                >
+                <label for="email" class="visually-hidden">Email</label>
                 <input
                   type="email"
                   class="form-control"
-                  id="register-email"
-                  name="register-email"
+                  id="email"
+                  name="email"
                   placeholder="Email"
                   required
                 />
               </div>
               <div class="mb-3">
-                <label for="register-password" class="visually-hidden"
-                  >Password</label
-                >
+                <label for="phone" class="visually-hidden">Phone</label>
                 <input
-                  type="password"
+                  type="tel"
                   class="form-control"
-                  id="register-password"
-                  name="register-password"
-                  placeholder="Password"
+                  id="phone"
+                  name="phone"
+                  placeholder="Phone"
                   required
                 />
               </div>
               <div class="mb-3">
-                <label for="confirm-password" class="visually-hidden"
-                  >Confirm Password</label
-                >
+                <label for="address-1" class="visually-hidden">Address 1</label>
                 <input
-                  type="password"
+                  type="text"
                   class="form-control"
-                  id="confirm-password"
-                  name="confirm-password"
-                  placeholder="Confirm Password"
+                  id="address-1"
+                  name="address-1"
+                  placeholder="Address 1"
                   required
                 />
+              </div>
+              <div class="mb-3">
+                <label for="address-2" class="visually-hidden">Address 2</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="address-2"
+                  name="address-2"
+                  placeholder="Address 2"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="city" class="visually-hidden">City</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="city"
+                  name="city"
+                  placeholder="City"
+                  required
+                />
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <!-- State -->
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <label class="input-group-text" for="state">State</label>
+                    </div>
+                    <select class="custom-select" id="state">
+                      <option selected>Choose...</option>
+                      <option value="1">ACT</option>
+                      <option value="2">NSW</option>
+                      <option value="3">NT</option>
+                      <option value="4">QLD</option>
+                      <option value="5">SA</option>
+                      <option value="6">TAS</option>
+                      <option value="7">VIC</option>
+                      <option value="8">WA</option>
+                    </select>
+                  </div>
+                  <!--  -->
+                </div>
+                <div class="col-6">
+                  <div class="mb-3">
+                    <label for="postcode" class="visually-hidden"
+                      >Postcode</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="postcode"
+                      name="postcode"
+                      placeholder="Postcode"
+                      required
+                    />
+                  </div>
+                </div>
               </div>
               <div class="mb-3 text-start">
                 <input
                   class="form-check-input"
                   type="checkbox"
-                  id="newsletter-signup"
+                  id="billing-address"
+                  checked
                 />
-                <label class="form-check-label" for="newsletter-signup">
+                <label class="form-check-label" for="billing-address">
+                  Use also as billing address
+                </label>
+              </div>
+              <!-- #####################################################BILLING -->
+              <div id="billingAddressFIelds" class="d-none">
+                <div class="mb-3">
+                  <label for="name" class="visually-hidden">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="last-name" class="visually-hidden"
+                    >Last Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="last-name"
+                    name="last-name"
+                    placeholder="Last Name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="visually-hidden">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="visually-hidden">Phone</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                    placeholder="Phone"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="address-1" class="visually-hidden"
+                    >Address 1</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address-1"
+                    name="address-1"
+                    placeholder="Address 1"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="address-2" class="visually-hidden"
+                    >Address 2</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address-2"
+                    name="address-2"
+                    placeholder="Address 2"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="city" class="visually-hidden">City</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="city"
+                    name="city"
+                    placeholder="City"
+                    required
+                  />
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <!-- State -->
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text" for="state"
+                          >State</label
+                        >
+                      </div>
+                      <select class="custom-select" id="state">
+                        <option selected>Choose...</option>
+                        <option value="1">ACT</option>
+                        <option value="2">NSW</option>
+                        <option value="3">NT</option>
+                        <option value="4">QLD</option>
+                        <option value="5">SA</option>
+                        <option value="6">TAS</option>
+                        <option value="7">VIC</option>
+                        <option value="8">WA</option>
+                      </select>
+                    </div>
+                    <!--  -->
+                  </div>
+                  <div class="col-6">
+                    <div class="mb-3">
+                      <label for="postcode" class="visually-hidden"
+                        >Postcode</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="postcode"
+                        name="postcode"
+                        placeholder="Postcode"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- #####################################################BILLING -->
+
+              <div class="mb-3 text-start">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="signup-newsletter"
+                />
+                <label class="form-check-label" for="signup-newsletter">
                   Sign up for newsletter
                 </label>
               </div>
               <button
                 type="submit"
-                class="btn btn-outline-dark btn-md disabled"
+                class="btn btn-outline-dark btn-md"
                 style="width: 100%"
               >
-                Register
+                Proceed to payment >
               </button>
             </form>
+          </div>
+          <div class="col-lg-6">
+            <p>Placeholder</p>
           </div>
         </div>
       </div>
