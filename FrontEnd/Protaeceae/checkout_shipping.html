@@ -588,55 +588,39 @@
     <script src="script.js"></script>
 
     <script>
-      // -----------------------------------------------------------BILLING ADDRESS HIDE/SHOW
+      // Consolidated BILLING ADDRESS HIDE/SHOW and required fields toggle
       document.addEventListener("DOMContentLoaded", function () {
         const billingAddressCheckbox =
           document.getElementById("billing-address");
-        const billingAddressFields = document.getElementById(
+        const billingAddressFieldsContainer = document.getElementById(
           "billing-address-fields"
         );
+        const billingAddressFields =
+          billingAddressFieldsContainer.querySelectorAll("input");
 
-        billingAddressCheckbox.addEventListener("change", function () {
-          if (this.checked) {
-            billingAddressFields.classList.add("d-none");
-          } else {
-            billingAddressFields.classList.remove("d-none");
-          }
-        });
-      });
+        function toggleBillingAddressVisibilityAndRequirements() {
+          const isSameAsShipping = billingAddressCheckbox.checked;
 
-      // ------------------------------------required fields toggle on biling fields
-      document.addEventListener("DOMContentLoaded", function () {
-        const billingAddressCheckbox =
-          document.getElementById("billing-address");
-        const billingAddressFields = document.querySelectorAll(
-          "#billing-address-fields input"
-        );
+          // Toggle visibility
+          billingAddressFieldsContainer.classList.toggle(
+            "d-none",
+            isSameAsShipping
+          );
 
-        // Function to toggle the required attribute
-        function toggleRequiredAttributes(isRequired) {
+          // Toggle the required attribute
           billingAddressFields.forEach((field) => {
-            if (isRequired) {
-              field.setAttribute("required", "required");
-            } else {
-              field.removeAttribute("required");
-            }
+            field.required = !isSameAsShipping;
           });
         }
 
-        // Initial check in case the checkbox is default checked
-        toggleRequiredAttributes(!billingAddressCheckbox.checked);
+        // Initial setup based on checkbox state
+        toggleBillingAddressVisibilityAndRequirements();
 
-        // Event listener for changes to the checkbox
-        billingAddressCheckbox.addEventListener("change", function () {
-          // If checked, billing address is the same as shipping, so remove required attributes
-          const isSameAsShipping = billingAddressCheckbox.checked;
-          toggleRequiredAttributes(!isSameAsShipping);
-
-          // Also, handle visibility of the billing address fields
-          document.getElementById("billing-address-fields").style.display =
-            isSameAsShipping ? "none" : "block";
-        });
+        // Setup event listener for changes to the checkbox
+        billingAddressCheckbox.addEventListener(
+          "change",
+          toggleBillingAddressVisibilityAndRequirements
+        );
       });
     </script>
   </body>
