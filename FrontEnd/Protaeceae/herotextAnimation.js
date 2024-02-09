@@ -65,24 +65,31 @@ window.onload = function () {
     return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
   }
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting && !entry.target.dataset.animated) {
-          animateLetters(entry.target);
-          entry.target.dataset.animated = true; // Mark as animated
-        }
-      });
-    },
-    {
-      threshold: 0.5,
-    }
-  );
+  const elementsToAnimate = document.querySelectorAll(".animate-text");
 
-  // Observe elements with the animation class
-  document.querySelectorAll(".animate-text").forEach((element) => {
-    observer.observe(element);
-  });
+  if (elementsToAnimate.length) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !entry.target.dataset.animated) {
+            animateLetters(entry.target);
+            entry.target.dataset.animated = true; // Mark as animated
+          }
+        });
+      },
+      {
+        threshold: 0.5,
+      }
+    );
+
+    elementsToAnimate.forEach((element) => {
+      observer.observe(element);
+    });
+  }
+
   // PBR opacity
-  document.querySelector("#pbr").style.opacity = "0.3";
+  var pbrElement = document.querySelector("#pbr");
+  if (pbrElement) {
+    pbrElement.style.opacity = "0.3";
+  }
 };

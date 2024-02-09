@@ -586,5 +586,58 @@
     <script src="breakpointIndicator.js"></script>
 
     <script src="script.js"></script>
+
+    <script>
+      // -----------------------------------------------------------BILLING ADDRESS HIDE/SHOW
+      document.addEventListener("DOMContentLoaded", function () {
+        const billingAddressCheckbox =
+          document.getElementById("billing-address");
+        const billingAddressFields = document.getElementById(
+          "billing-address-fields"
+        );
+
+        billingAddressCheckbox.addEventListener("change", function () {
+          if (this.checked) {
+            billingAddressFields.classList.add("d-none");
+          } else {
+            billingAddressFields.classList.remove("d-none");
+          }
+        });
+      });
+
+      // ------------------------------------required fields toggle on biling fields
+      document.addEventListener("DOMContentLoaded", function () {
+        const billingAddressCheckbox =
+          document.getElementById("billing-address");
+        const billingAddressFields = document.querySelectorAll(
+          "#billing-address-fields input"
+        );
+
+        // Function to toggle the required attribute
+        function toggleRequiredAttributes(isRequired) {
+          billingAddressFields.forEach((field) => {
+            if (isRequired) {
+              field.setAttribute("required", "required");
+            } else {
+              field.removeAttribute("required");
+            }
+          });
+        }
+
+        // Initial check in case the checkbox is default checked
+        toggleRequiredAttributes(!billingAddressCheckbox.checked);
+
+        // Event listener for changes to the checkbox
+        billingAddressCheckbox.addEventListener("change", function () {
+          // If checked, billing address is the same as shipping, so remove required attributes
+          const isSameAsShipping = billingAddressCheckbox.checked;
+          toggleRequiredAttributes(!isSameAsShipping);
+
+          // Also, handle visibility of the billing address fields
+          document.getElementById("billing-address-fields").style.display =
+            isSameAsShipping ? "none" : "block";
+        });
+      });
+    </script>
   </body>
 </html>
