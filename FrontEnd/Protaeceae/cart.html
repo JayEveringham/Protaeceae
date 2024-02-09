@@ -251,9 +251,9 @@
             <!-- CART CONTENTS -->
             <div class="row">
               <div class="col-6">Item</div>
-              <div class="col-3 col-md-2 text-end">Each</div>
+              <div class="d-none d-md-block col-md-2 text-end">Each</div>
               <div class="d-none d-md-block col-md-2 text-end">Qty.</div>
-              <div class="col-3 col-md-2 text-end">Sub.</div>
+              <div class="d-none d-md-block col-md-2 text-end">Sub.</div>
               <hr />
             </div>
             <div class="row">
@@ -275,11 +275,24 @@
               </div>
               <div class="col-6">
                 <div class="row">
-                  <div class="col-6 col-md-4 text-end">$240</div>
+                  <div class="d-none d-md-block col-md-4 text-end">$240</div>
                   <div class="d-none d-md-block col-md-4 text-end">1</div>
-                  <div class="col-6 col-md-4 text-end">$240</div>
+                  <div class="d-none d-md-block col-md-4 text-end">$240</div>
+                  <!-- SMALL SCREENS -->
+                  <div class="d-md-none row pe-0">
+                    <div class="col-6 text-start">Each</div>
+                    <div class="col-6 text-end px-0">$240</div>
+                  </div>
+                  <div class="d-md-none row pe-0">
+                    <div class="col-6 text-start">Quantity</div>
+                    <div class="col-6 text-end px-0">1</div>
+                  </div>
+                  <div class="d-md-none row pe-0">
+                    <div class="col-6 text-start">Subtotal</div>
+                    <div class="col-6 text-end px-0">$240</div>
+                  </div>
                 </div>
-                <div class="row">
+                <div class="rowd">
                   <!-- Counter -->
                   <div
                     class="quantity-container mt-3 d-flex justify-content-end"
