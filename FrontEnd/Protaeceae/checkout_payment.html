@@ -246,37 +246,37 @@
         </div>
 
         <!-- ROW -->
-        <div class="row">
-          <div class="col-12 col-lg-8">
-            <!-- -------------------------------------------------------------------PAYMENT -->
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseOne"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseOne"
-                  >
-                    <img src="SVG/mastercard.svg" alt="" class="payment-svg" />
-                    <img src="SVG/amex.svg" alt="" class="payment-svg" />
-                    <img src="SVG/visa (1).svg" alt="" class="payment-svg" />
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseOne"
-                  class="accoradion-collapse collapse show"
-                  aria-labelledby="flush-headingOne"
-                  data-bs-parent="#accordionFlushExample"
-                >
-                  <div class="accordion-body">
-                    <form
-                      id="ccDeets"
-                      action="checkout_success.html"
-                      class="action"
+        <form id="ccDeets" action="checkout_success.html" class="action">
+          <div class="row">
+            <div class="col-12 col-lg-8">
+              <!-- -------------------------------------------------------------------PAYMENT -->
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne"
                     >
+                      <img
+                        src="SVG/mastercard.svg"
+                        alt=""
+                        class="payment-svg"
+                      />
+                      <img src="SVG/amex.svg" alt="" class="payment-svg" />
+                      <img src="SVG/visa (1).svg" alt="" class="payment-svg" />
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseOne"
+                    class="accoradion-collapse collapse show"
+                    aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
                       <!----------------------------------------PAYMENT BODY-->
                       <!-- Cardholder's Name -->
                       <div class="form-group mb-3">
@@ -347,118 +347,120 @@
                           title="CVV must be 3 or 4 digits"
                         />
                       </div>
-                    </form>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwo">
-                  <button
-                    class="accordion-button collapsed disabled"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseTwo"
-                    disabled
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button
+                      class="accordion-button collapsed disabled"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTwo"
+                      disabled
+                    >
+                      <img src="svg/paypal-color.svg" class="payment-svg" />
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample"
                   >
-                    <img src="svg/paypal-color.svg" class="payment-svg" />
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseTwo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="flush-headingTwo"
-                  data-bs-parent="#accordionFlushExample"
-                >
-                  <div class="accordion-body">
-                    Placeholder content for this accordion, which is intended to
-                    demonstrate the <code>.accordion-flush</code> class. This is
-                    the second item's accordion body. Let's imagine this being
-                    filled with some actual content.
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the second item's accordion body. Let's imagine
+                      this being filled with some actual content.
+                    </div>
                   </div>
                 </div>
+                <hr />
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4 summary-column">
+              <!-- SUMMARY -->
+              <h5>Summary</h5>
+              <hr />
+              <div class="row">
+                <div class="col-6">Contact</div>
+                <div class="col-6 text-end">jay.e@posteo.net</div>
+              </div>
+              <div class="row">
+                <div class="col-6">Shipping address</div>
+                <div class="col-6 text-end">123 Tree Street, QLD 4000</div>
+              </div>
+
+              <hr />
+
+              <div class="row summary-item" data-product-id="1">
+                <div class="col-9">
+                  Tropical Fire x<span class="summary-quantity">1</span>
+                </div>
+                <div class="col-3 text-end summary-price">$240.00</div>
+              </div>
+              <div class="row summary-item" data-product-id="2">
+                <div class="col-9">
+                  Rainbow Lorikeet x<span class="summary-quantity">1</span>
+                </div>
+                <div class="col-3 text-end summary-price">$120.00</div>
+              </div>
+              <div class="row summary-item" data-product-id="3">
+                <div class="col-9">
+                  Lavender Haze x<span class="summary-quantity">1</span>
+                </div>
+                <div class="col-3 text-end summary-price">$600.00</div>
               </div>
               <hr />
+              <div class="row">
+                <div class="col-9">Subtotal</div>
+                <div class="col-3 text-end overall-subtotal">$960.00</div>
+              </div>
+              <div class="row">
+                <div class="col-9">GST</div>
+                <div class="col-3 text-end gst">$96.00</div>
+              </div>
+              <div class="row">
+                <div class="col-9">
+                  Shipping (includes
+                  <a href="shipping.html" class="text-purple"
+                    >Biosecurity Fee</a
+                  >
+                  for NT, TAS, WA)
+                </div>
+                <div class="col-3 text-end">$35.00</div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-9">Order Total</div>
+                <div class="col-3 text-end total">$1091.00</div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-9 disabled-text">Apply Discount Code</div>
+                <div class="col-3 disabled-text text-end">></div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-9 disabled-text">Gift Card</div>
+                <div class="col-3 disabled-text text-end">></div>
+              </div>
+              <hr />
+
+              <button
+                type="submit"
+                class="btn btn-outline-dark btn-md"
+                style="width: 100%"
+              >
+                Complete order >
+              </button>
             </div>
           </div>
-
-          <div class="col-12 col-lg-4 summary-column">
-            <!-- SUMMARY -->
-            <h5>Summary</h5>
-            <hr />
-            <div class="row">
-              <div class="col-6">Contact</div>
-              <div class="col-6 text-end">jay.e@posteo.net</div>
-            </div>
-            <div class="row">
-              <div class="col-6">Shipping address</div>
-              <div class="col-6 text-end">123 Tree Street, QLD 4000</div>
-            </div>
-
-            <hr />
-
-            <div class="row summary-item" data-product-id="1">
-              <div class="col-9">
-                Tropical Fire x<span class="summary-quantity">1</span>
-              </div>
-              <div class="col-3 text-end summary-price">$240.00</div>
-            </div>
-            <div class="row summary-item" data-product-id="2">
-              <div class="col-9">
-                Rainbow Lorikeet x<span class="summary-quantity">1</span>
-              </div>
-              <div class="col-3 text-end summary-price">$120.00</div>
-            </div>
-            <div class="row summary-item" data-product-id="3">
-              <div class="col-9">
-                Lavender Haze x<span class="summary-quantity">1</span>
-              </div>
-              <div class="col-3 text-end summary-price">$600.00</div>
-            </div>
-            <hr />
-            <div class="row">
-              <div class="col-9">Subtotal</div>
-              <div class="col-3 text-end overall-subtotal">$960.00</div>
-            </div>
-            <div class="row">
-              <div class="col-9">GST</div>
-              <div class="col-3 text-end gst">$96.00</div>
-            </div>
-            <div class="row">
-              <div class="col-9">
-                Shipping (includes
-                <a href="shipping.html" class="text-purple">Biosecurity Fee</a>
-                for NT, TAS, WA)
-              </div>
-              <div class="col-3 text-end">$35.00</div>
-            </div>
-            <hr />
-            <div class="row">
-              <div class="col-9">Order Total</div>
-              <div class="col-3 text-end total">$1091.00</div>
-            </div>
-            <hr />
-            <div class="row">
-              <div class="col-9 disabled-text">Apply Discount Code</div>
-              <div class="col-3 disabled-text text-end">></div>
-            </div>
-            <hr />
-            <div class="row">
-              <div class="col-9 disabled-text">Gift Card</div>
-              <div class="col-3 disabled-text text-end">></div>
-            </div>
-            <hr />
-
-            <button
-              type="submit"
-              class="btn btn-outline-dark btn-md"
-              style="width: 100%"
-            >
-              Complete order >
-            </button>
-          </div>
-        </div>
+        </form>
       </div>
     </main>
 
