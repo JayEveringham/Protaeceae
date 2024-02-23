@@ -219,12 +219,21 @@
           <div class="">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="loginregister.html">Log In</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="profile.html"
+                >
+                  <img
+                    src="SVG/user-solid.svg"
+                    class="profile-icon"
+                    alt="user profile"
+                  />
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="cart.html">
-                  <!-- <i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i> -->
-                  <img src="SVG/cart1.svg" class="cart" alt="Shopping Cart" />
+                <a class="nav-link" href="cart.html">
+                  <img src="SVG/cart2.svg" class="cart" alt="Shopping Cart" />
                 </a>
               </li>
             </ul>
@@ -1029,41 +1038,6 @@
 
     <script src="script.js"></script>
 
-    <script>
-      // Consolidated BILLING ADDRESS HIDE/SHOW and required fields toggle
-      document.addEventListener("DOMContentLoaded", function () {
-        const billingAddressCheckbox =
-          document.getElementById("billing-address");
-        const billingAddressFieldsContainer = document.getElementById(
-          "billing-address-fields"
-        );
-        const billingAddressFields =
-          billingAddressFieldsContainer.querySelectorAll("input");
-
-        function toggleBillingAddressVisibilityAndRequirements() {
-          const isSameAsShipping = billingAddressCheckbox.checked;
-
-          // Toggle visibility
-          billingAddressFieldsContainer.classList.toggle(
-            "d-none",
-            isSameAsShipping
-          );
-
-          // Toggle the required attribute
-          billingAddressFields.forEach((field) => {
-            field.required = !isSameAsShipping;
-          });
-        }
-
-        // Initial setup based on checkbox state
-        toggleBillingAddressVisibilityAndRequirements();
-
-        // Setup event listener for changes to the checkbox
-        billingAddressCheckbox.addEventListener(
-          "change",
-          toggleBillingAddressVisibilityAndRequirements
-        );
-      });
-    </script>
+    <script src="quantityButton.js"></script>
   </body>
 </html>
