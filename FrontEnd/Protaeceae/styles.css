@@ -973,3 +973,10 @@ hr {
 .success-col-2 {
   padding-right: 0px;
 }
+
+.summary-column {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 85px; /* Adjust based on your header's height or desired spacing */
+  align-self: flex-start; /* Helps in a flex container */
+}
