@@ -903,6 +903,7 @@ hr {
 .input-group-text {
   background-color: white;
   color: var(--mid-grey-color);
+  border-radius: 0px !important;
 }
 
 .privacy-remind {
@@ -938,4 +939,16 @@ hr {
 .summary-column .row {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.payment-svg {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.cc-input {
+  background-image: url("svg/credit-card-regular.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 30px 30px;
 }

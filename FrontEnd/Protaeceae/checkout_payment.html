@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Protaeceae | Cart</title>
+    <title>Protaeceae | Checkout / Payment</title>
 
     <!-- FAVICON -->
     <link
@@ -248,75 +248,123 @@
         <!-- ROW -->
         <div class="row">
           <div class="col-12 col-lg-8">
-            <!-- CART CONTENTS -->
-            <div class="row">
-              <div class="col-6">Item</div>
-              <div class="d-none d-md-block col-md-2 text-end">Each</div>
-              <div class="d-none d-md-block col-md-2 text-end">Qty.</div>
-              <div class="d-none d-md-block col-md-2 text-end">Sub.</div>
+            <!-- -------------------------------------------------------------------PAYMENT -->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    <img src="SVG/mastercard.svg" alt="" class="payment-svg" />
+                    <img src="SVG/amex.svg" alt="" class="payment-svg" />
+                    <img src="SVG/visa (1).svg" alt="" class="payment-svg" />
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    <!----------------------------------------PAYMENT BODY-->
+                    <!-- Cardholder's Name -->
+                    <div class="form-group mb-3">
+                      <label for="cardName" class="visually-hidden"
+                        >Cardholder's Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="cardName"
+                        autocomplete="cc-name"
+                        placeholder="Name on Card"
+                      />
+                    </div>
+
+                    <!-- Card Number -->
+                    <div class="form-group mb-3">
+                      <label for="cardNumber" class="visually-hidden"
+                        >Card Number</label
+                      >
+                      <input
+                        type="tel"
+                        class="form-control cc-input"
+                        id="cardNumber"
+                        inputmode="numeric"
+                        pattern="[0-9\s]{13,19}"
+                        autocomplete="cc-number"
+                        maxlength="19"
+                        placeholder="Card Number"
+                      />
+                    </div>
+
+                    <!-- Expiration Date -->
+                    <div class="form-group mb-3">
+                      <label for="cardExpiration" class="visually-hidden"
+                        >Expiration Date</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="cardExpiration"
+                        placeholder="MM/YY"
+                        pattern="\d{2}/\d{2}"
+                        autocomplete="cc-exp"
+                      />
+                    </div>
+
+                    <!-- CVV -->
+                    <div class="form-group mb-3">
+                      <label for="cardCVV" class="visually-hidden">CVV</label>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="cardCVV"
+                        inputmode="numeric"
+                        pattern="[0-9]{3,4}"
+                        autocomplete="cc-csc"
+                        maxlength="4"
+                        placeholder="CVV"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    <img src="svg/paypal-color.svg" class="payment-svg" />
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the second item's accordion body. Let's imagine this being
+                    filled with some actual content.
+                  </div>
+                </div>
+              </div>
               <hr />
             </div>
-            <div class="row">
-              <div class="col-6 position-relative">
-                <p class="cart-product-title">
-                  <a
-                    href="genera_grevillea_tropicalfire.html"
-                    class="stretched-link text-purple"
-                    style="text-decoration: none !important"
-                  >
-                    Tropical Fire
-                  </a>
-                </p>
-                <img
-                  class="cart-product-image"
-                  src="images/tropicalfire.webp"
-                  alt="tropical fire grevillea"
-                />
-              </div>
-              <div class="col-6">
-                <div class="row">
-                  <div class="d-none d-md-block col-md-4 text-end">$240</div>
-                  <div class="d-none d-md-block col-md-4 text-end">1</div>
-                  <div class="d-none d-md-block col-md-4 text-end">$240</div>
-                  <!-- SMALL SCREENS -->
-                  <div class="d-md-none row pe-0">
-                    <div class="col-6 text-start">Each</div>
-                    <div class="col-6 text-end px-0">$240</div>
-                  </div>
-                  <div class="d-md-none row pe-0">
-                    <div class="col-6 text-start">Quantity</div>
-                    <div class="col-6 text-end px-0">1</div>
-                  </div>
-                  <div class="d-md-none row pe-0">
-                    <div class="col-6 text-start">Subtotal</div>
-                    <div class="col-6 text-end px-0">$240</div>
-                  </div>
-                </div>
-                <div class="rowd">
-                  <!-- Counter -->
-                  <div
-                    class="quantity-container mt-3 d-flex justify-content-end"
-                  >
-                    <a
-                      href="#"
-                      class="btn btn-quantity-minus btn-outline-dark btn-md mx-0"
-                      >-</a
-                    >
-                    <div
-                      class="quantity mx-0 d-flex align-content-center justify-content-center"
-                    >
-                      1
-                    </div>
-                    <a
-                      href="#"
-                      class="btn btn-quantity-plus btn-outline-dark btn-md mx-0"
-                      >+</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr />
           </div>
 
           <div class="col-12 col-lg-4 summary-column">
@@ -391,7 +439,7 @@
               class="btn btn-outline-dark btn-md"
               style="width: 100%"
               aria-disabled="false"
-              href="checkout_shipping.html"
+              href="checkout_success.html"
             >
               Complete order >
             </a>
