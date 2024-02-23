@@ -362,10 +362,67 @@
                 >
               </div>
 
-              <!-- Button -->
-              <a href="#" class="btn btn-outline-dark btn-md mx-2"
-                >add to cart</a
+              <!-- MODAL ################################################################################# -->
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-outline-dark btn-md mx-2"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
               >
+                add to cart
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Added to cart
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-7 justify-content-end">
+                          Royal Purpurea
+                        </div>
+                        <div class="col-2">QTY: 1</div>
+                        <div class="col-3">$340.00</div>
+                      </div>
+                    </div>
+                    <div class="modal-footer justify-content-end">
+                      <!-- <button
+                        type="button"
+                        class="btn btn-outline-dark btn-md mx-2"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button> -->
+                      <a
+                        role="button"
+                        class="btn btn-outline-dark btn-md mx-2"
+                        href="cart.html"
+                      >
+                        View cart >
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- MODAL ################################################################################# -->
             </div>
 
             <!--  -->
