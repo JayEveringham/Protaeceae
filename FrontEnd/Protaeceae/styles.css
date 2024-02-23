@@ -930,3 +930,7 @@ hr {
   text-align: right;
   border-top: 1px solid var(--light-purple-color);
 }
+
+.disabled-text {
+  color: grey;
+}
