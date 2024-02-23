@@ -267,84 +267,100 @@
                 </h2>
                 <div
                   id="flush-collapseOne"
-                  class="accordion-collapse collapse show"
+                  class="accoradion-collapse collapse show"
                   aria-labelledby="flush-headingOne"
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div class="accordion-body">
-                    <!----------------------------------------PAYMENT BODY-->
-                    <!-- Cardholder's Name -->
-                    <div class="form-group mb-3">
-                      <label for="cardName" class="visually-hidden"
-                        >Cardholder's Name</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="cardName"
-                        autocomplete="cc-name"
-                        placeholder="Name on Card"
-                      />
-                    </div>
+                    <form
+                      id="ccDeets"
+                      action="checkout_success.html"
+                      class="action"
+                    >
+                      <!----------------------------------------PAYMENT BODY-->
+                      <!-- Cardholder's Name -->
+                      <div class="form-group mb-3">
+                        <label for="cardName" class="visually-hidden"
+                          >Cardholder's Name</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="cardName"
+                          autocomplete="cc-name"
+                          placeholder="Name on Card"
+                          required
+                          pattern="[a-zA-Z\s]+"
+                          title="Cardholder name must contain letters and spaces only"
+                        />
+                      </div>
 
-                    <!-- Card Number -->
-                    <div class="form-group mb-3">
-                      <label for="cardNumber" class="visually-hidden"
-                        >Card Number</label
-                      >
-                      <input
-                        type="tel"
-                        class="form-control cc-input"
-                        id="cardNumber"
-                        inputmode="numeric"
-                        pattern="[0-9\s]{13,19}"
-                        autocomplete="cc-number"
-                        maxlength="19"
-                        placeholder="Card Number"
-                      />
-                    </div>
+                      <!-- Card Number -->
+                      <div class="form-group mb-3">
+                        <label for="cardNumber" class="visually-hidden"
+                          >Card Number</label
+                        >
+                        <input
+                          type="tel"
+                          class="form-control cc-input"
+                          id="cardNumber"
+                          inputmode="numeric"
+                          pattern="\d{16}"
+                          autocomplete="cc-number"
+                          maxlength="19"
+                          placeholder="Card Number"
+                          required
+                          title="Card number must be 16 digits"
+                        />
+                      </div>
 
-                    <!-- Expiration Date -->
-                    <div class="form-group mb-3">
-                      <label for="cardExpiration" class="visually-hidden"
-                        >Expiration Date</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="cardExpiration"
-                        placeholder="MM/YY"
-                        pattern="\d{2}/\d{2}"
-                        autocomplete="cc-exp"
-                      />
-                    </div>
+                      <!-- Expiration Date -->
+                      <div class="form-group mb-3">
+                        <label for="cardExpiration" class="visually-hidden"
+                          >Expiration Date</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="cardExpiration"
+                          placeholder="MM/YY"
+                          pattern="(0[1-9]|1[0-2])\/[0-9]{2}"
+                          autocomplete="cc-exp"
+                          required
+                          title="Expiration date must be in MM/YY format"
+                        />
+                      </div>
 
-                    <!-- CVV -->
-                    <div class="form-group mb-3">
-                      <label for="cardCVV" class="visually-hidden">CVV</label>
-                      <input
-                        type="tel"
-                        class="form-control"
-                        id="cardCVV"
-                        inputmode="numeric"
-                        pattern="[0-9]{3,4}"
-                        autocomplete="cc-csc"
-                        maxlength="4"
-                        placeholder="CVV"
-                      />
-                    </div>
+                      <!-- CVV -->
+                      <div class="form-group mb-3">
+                        <label for="cardCVV" class="visually-hidden">CVV</label>
+                        <input
+                          type="tel"
+                          class="form-control"
+                          id="cardCVV"
+                          inputmode="numeric"
+                          pattern="\d{3,4}"
+                          autocomplete="cc-csc"
+                          maxlength="4"
+                          placeholder="CVV"
+                          required
+                          title="CVV must be 3 or 4 digits"
+                        />
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingTwo">
                   <button
-                    class="accordion-button collapsed"
+                    class="accordion-button collapsed disabled"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseTwo"
                     aria-expanded="false"
                     aria-controls="flush-collapseTwo"
+                    disabled
                   >
                     <img src="svg/paypal-color.svg" class="payment-svg" />
                   </button>
@@ -433,16 +449,14 @@
               <div class="col-3 disabled-text text-end">></div>
             </div>
             <hr />
-            <a
+
+            <button
               type="submit"
-              role="button"
               class="btn btn-outline-dark btn-md"
               style="width: 100%"
-              aria-disabled="false"
-              href="checkout_success.html"
             >
               Complete order >
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -486,7 +500,5 @@
     <script src="breakpointIndicator.js"></script>
 
     <script src="script.js"></script>
-
-    <script src="quantityButton.js"></script>
   </body>
 </html>
