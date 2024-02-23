@@ -976,3 +976,12 @@ hr {
   top: 85px; /* Adjust based on your header's height or desired spacing */
   align-self: flex-start; /* Helps in a flex container */
 }
+
+.no-decoration {
+  text-decoration: none;
+  color: inherit;
+}
+
+.modal-content {
+  border-radius: 0px !important;
+}

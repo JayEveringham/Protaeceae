@@ -235,18 +235,17 @@
 
     <!-- MAIN #################################################################################### -->
     <main class="wbg">
-      <div class="container contact-container pb-5">
+      <div class="container pb-5">
+        <!-- BREADCRUMB #################################################################################### -->
+        <div class="container-fluid breadcrumb mb-4 breadcrumb-light">
+          <div class="container">
+            <h1>
+              <span class="text-nowrap">Profile</span>
+            </h1>
+          </div>
+        </div>
         <div class="row">
-          <div class="col-lg-6">
-            <!-- BREADCRUMB #################################################################################### -->
-            <div class="container-fluid breadcrumb mb-4 breadcrumb-light">
-              <div class="container">
-                <h1>
-                  <span class="text-nowrap">Profile</span>
-                </h1>
-              </div>
-            </div>
-
+          <div class="col-lg-6 mb-5 mb-lg-2">
             <form action="checkout_payment.html" method="">
               <div class="mb-3">
                 <label for="name" class="visually-hidden">Name</label>
@@ -368,6 +367,58 @@
                     />
                   </div>
                 </div>
+
+                <fieldset>
+                  <!-- <legend>Update Password</legend> -->
+                  <div class="mb-3">
+                    <label
+                      for="current-password"
+                      class="form-label visually-hidden"
+                      >Current Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="current-password"
+                      name="current-password"
+                      placeholder="Current Password"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="new-password" class="form-label visually-hidden"
+                      >New Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="new-password"
+                      name="new-password"
+                      placeholder="New Password"
+                      required
+                    />
+                    <small class="form-text text-muted">
+                      Your password must be 8-20 characters long, contain
+                      letters and numbers, and must not contain spaces, special
+                      characters, or emoji.
+                    </small>
+                  </div>
+                  <div class="mb-3">
+                    <label
+                      for="confirm-new-password"
+                      class="form-label visually-hidden"
+                      >Confirm New Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="confirm-new-password"
+                      name="confirm-new-password"
+                      placeholder="Confirm New Password"
+                      required
+                    />
+                  </div>
+                </fieldset>
               </div>
 
               <div class="mb-3 text-start">
@@ -380,6 +431,7 @@
                   Sign up for newsletter
                 </label>
               </div>
+
               <button
                 type="submit"
                 class="btn btn-outline-dark btn-md"
@@ -389,9 +441,297 @@
               </button>
             </form>
           </div>
-        </div>
-        <div class="col-lg-6">
-          <p></p>
+
+          <!-- FAVOURITES -->
+          <div class="col-lg-6">
+            <h2 class="text-end lower-border">Favourites</h2>
+
+            <!-- ITEM 1 -->
+            <div class="container product-container pt-4">
+              <div class="row">
+                <!-- IMAGE (LEFT) ----->
+                <div class="col-12 col-md-6">
+                  <div
+                    class="product-image"
+                    style="background-image: url('images/blossomCascade.jpeg')"
+                  ></div>
+                </div>
+                <!-- PRODUCT (RIGHT) ----->
+                <div class="col-12 col-md-6">
+                  <!-- Product info header -->
+                  <div class="row mt-3 mt-md-0">
+                    <!-- Left hand side -->
+                    <div class="col">
+                      <div class="full-title">
+                        <h4 class="card-title d-inline">
+                          <a
+                            href="genera_callistemon_blossomcascade.html"
+                            class="no-decoration"
+                            >Blossom Cascade</a
+                          >
+                        </h4>
+                      </div>
+
+                      <!-- Price -->
+                      <p class="price my-0">$380</p>
+                    </div>
+                    <!-- Right hand side (heart) -->
+                    <div class="col-1 me-4 pe-4 my-0">
+                      <!-- Wrapper for right alignment and vertical stacking -->
+                      <div class="">
+                        <!-- Heart -->
+                        <div class="heart-product-container">
+                          <img
+                            src="SVG/heart-filled.svg"
+                            alt="favourite heart"
+                            class="toggle-heart"
+                            style="cursor: pointer"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- COUNTER / "ADD TO CARD" -->
+                  <div class="d-flex justify-content-end">
+                    <!-- Counter -->
+                    <div class="quantity-container d-flex">
+                      <a
+                        href="#"
+                        class="btn btn-quantity-minus btn-outline-dark btn-md mx-0"
+                        >-</a
+                      >
+                      <div
+                        class="quantity mx-0 d-flex align-content-center justify-content-center"
+                      >
+                        1
+                      </div>
+                      <a
+                        href="#"
+                        class="btn btn-quantity-plus btn-outline-dark btn-md mx-0"
+                        >+</a
+                      >
+                    </div>
+                  </div>
+
+                  <!--  -->
+                </div>
+              </div>
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="container product-container pt-4">
+              <div class="row">
+                <!-- IMAGE (LEFT) ----->
+                <div class="col-12 col-md-6">
+                  <div
+                    class="product-image"
+                    style="background-image: url('images/tropicalfire.webp')"
+                  ></div>
+                </div>
+                <!-- PRODUCT (RIGHT) ----->
+                <div class="col-12 col-md-6">
+                  <!-- Product info header -->
+                  <div class="row mt-3 mt-md-0">
+                    <!-- Left hand side -->
+                    <div class="col">
+                      <div class="full-title">
+                        <h4 class="card-title d-inline">Tropical Fire</h4>
+                      </div>
+
+                      <!-- Price -->
+                      <p class="price my-0">$140</p>
+                    </div>
+                    <!-- Right hand side (heart) -->
+                    <div class="col-1 me-4 pe-4 my-0">
+                      <!-- Wrapper for right alignment and vertical stacking -->
+                      <div class="">
+                        <!-- Heart -->
+                        <div class="heart-product-container">
+                          <img
+                            src="SVG/heart-filled.svg"
+                            alt="favourite heart"
+                            class="toggle-heart"
+                            style="cursor: pointer"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- COUNTER / "ADD TO CARD" -->
+                  <div class="d-flex justify-content-end">
+                    <!-- Counter -->
+                    <div class="quantity-container d-flex">
+                      <a
+                        href="#"
+                        class="btn btn-quantity-minus btn-outline-dark btn-md mx-0"
+                        >-</a
+                      >
+                      <div
+                        class="quantity mx-0 d-flex align-content-center justify-content-center"
+                      >
+                        1
+                      </div>
+                      <a
+                        href="#"
+                        class="btn btn-quantity-plus btn-outline-dark btn-md mx-0"
+                        >+</a
+                      >
+                    </div>
+                  </div>
+
+                  <!--  -->
+                </div>
+              </div>
+            </div>
+
+            <!-- ITEM 3 -->
+            <div class="container product-container pt-4">
+              <div class="row">
+                <!-- IMAGE (LEFT) ----->
+                <div class="col-12 col-md-6">
+                  <div
+                    class="product-image"
+                    style="background-image: url('images/royalpurpurea.webp')"
+                  ></div>
+                </div>
+                <!-- PRODUCT (RIGHT) ----->
+                <div class="col-12 col-md-6">
+                  <!-- Product info header -->
+                  <div class="row mt-3 mt-md-0">
+                    <!-- Left hand side -->
+                    <div class="col">
+                      <div class="full-title">
+                        <h4 class="card-title d-inline">Royal Purpurea</h4>
+                      </div>
+
+                      <!-- Price -->
+                      <p class="price my-0">$340</p>
+                    </div>
+                    <!-- Right hand side (heart) -->
+                    <div class="col-1 me-4 pe-4 my-0">
+                      <!-- Wrapper for right alignment and vertical stacking -->
+                      <div class="">
+                        <!-- Heart -->
+                        <div class="heart-product-container">
+                          <img
+                            src="SVG/heart-filled.svg"
+                            alt="favourite heart"
+                            class="toggle-heart"
+                            style="cursor: pointer"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- COUNTER / "ADD TO CARD" -->
+                  <div class="d-flex justify-content-end">
+                    <!-- Counter -->
+                    <div class="quantity-container d-flex">
+                      <a
+                        href="#"
+                        class="btn btn-quantity-minus btn-outline-dark btn-md mx-0"
+                        >-</a
+                      >
+                      <div
+                        class="quantity mx-0 d-flex align-content-center justify-content-center"
+                      >
+                        1
+                      </div>
+                      <a
+                        href="#"
+                        class="btn btn-quantity-plus btn-outline-dark btn-md mx-0"
+                        >+</a
+                      >
+                    </div>
+                  </div>
+
+                  <!--  -->
+                </div>
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- MODAL ################################################################################# -->
+            <!-- Button trigger modal -->
+            <div class="container text-end px-0 mx-0">
+              <button
+                type="button"
+                class="btn btn-outline-dark btn-md mx-2"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                style="width: 100%"
+              >
+                Add favourites to cart >
+              </button>
+            </div>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Added to cart
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-7 justify-content-end">
+                        Blossom Cascade
+                      </div>
+                      <div class="col-2">QTY: 1</div>
+                      <div class="col-3">$80.00</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-7 justify-content-end">Tropical Fire</div>
+                      <div class="col-2">QTY: 1</div>
+                      <div class="col-3">$140.00</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-7 justify-content-end">
+                        Royal Purpurea
+                      </div>
+                      <div class="col-2">QTY: 1</div>
+                      <div class="col-3">$340.00</div>
+                    </div>
+                  </div>
+                  <div class="modal-footer justify-content-end">
+                    <!-- <button
+                        type="button"
+                        class="btn btn-outline-dark btn-md mx-2"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button> -->
+                    <a
+                      role="button"
+                      class="btn btn-outline-dark btn-md mx-2"
+                      href="cart.html"
+                    >
+                      View cart >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- MODAL ################################################################################# -->
+          </div>
         </div>
       </div>
     </main>
