@@ -952,3 +952,24 @@ hr {
   background-position: right 10px center;
   background-size: 30px 30px;
 }
+
+.success-container {
+  max-width: 500px;
+}
+
+.success-col-1 {
+  text-align: right;
+}
+
+.success-container .row {
+  margin-bottom: 10px;
+}
+
+.success-col-1 {
+  padding-left: 0px;
+  font-weight: 600;
+}
+
+.success-col-2 {
+  padding-right: 0px;
+}
