@@ -1,0 +1,49 @@
+/* Add your custom styles here */
+
+/* Updated theme color to orange */
+.bg-orange {
+    background-color: #e6993b;
+}
+
+.hero-banner {
+    background: url('https://images.pexels.com/photos/1008000/pexels-photo-1008000.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover no-repeat;
+    color: #fff;
+    padding: 100px 0;
+    height: 450px;
+}
+
+.hero-banner2 {
+    background: url('https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover no-repeat;
+    color: #fff;
+    padding: 100px 0;
+    height: 450px;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+.card img {
+    border-radius: 8px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+}
+
+
+.footer-links a {
+    color: #e6993b;
+}
+
+#image-carousel {
+    background-color: #f8f9fa; /* Background color for the carousel section */
+}
+
+
+.custom-img {
+    max-height: 200px; /* Adjust the height as per your requirement */
+    object-fit: cover; /* Ensure the image covers the specified height without stretching */
+}
+
