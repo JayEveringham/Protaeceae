@@ -7,6 +7,7 @@ Welcome to the responsive frontend website project! This project is an e-commerc
 - [Responsive Frontend Website](#responsive-frontend-website)
   - [Table of Contents](#table-of-contents)
   - [Project Overview](#project-overview)
+  - [Wireframe and prototype](#wireframe-and-prototype)
   - [Features](#features)
   - [Technologies Used](#technologies-used)
   - [Contact](#contact)
@@ -14,6 +15,12 @@ Welcome to the responsive frontend website project! This project is an e-commerc
 ## Project Overview
 
 This project aims to create a responsive e-commerce platform that allows users to browse products, add them to the cart, and proceed to checkout. The design is optimized for both desktop and mobile devices, ensuring a consistent and user-friendly experience.
+
+## Wireframe and prototype
+
+This project was wireframed and prototyped in Figma.
+![Wireframe](wireframe.png)
+![Prototype](prototype.png)
 
 ## Features
 
