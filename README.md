@@ -1,6 +1,6 @@
 # Responsive Frontend Website
 
-Welcome to the responsive frontend website project! This project is an e-commerce website built using modern web technologies to ensure responsiveness and a seamless user experience across different devices.
+Welcome to my responsive frontend website project! 
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@ Welcome to the responsive frontend website project! This project is an e-commerc
 
 ## Project Overview
 
-This project aims to create a responsive e-commerce platform that allows users to browse products, add them to the cart, and proceed to checkout. The design is optimized for both desktop and mobile devices, ensuring a consistent and user-friendly experience.
+This project was undertaken as part of my ongoing IT studies and is based off a fictional genetic engineering company named "Protaeceae". This project aims to create a responsive company portfolio and e-commerce platform that allows users to browse company info, news, research, products, add products to the cart, and proceed to checkout. The design is optimized for both desktop and mobile devices, including tablets.
 
 ## Wireframe and prototype
 
