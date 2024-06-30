@@ -36,4 +36,4 @@ This project aims to create a responsive e-commerce platform that allows users t
 
 ## Contact
 
-If you have any questions, feel free to contact me at [jay.e@posteo.net]
+If you have any questions, feel free to contact me at jay.e@posteo.net
